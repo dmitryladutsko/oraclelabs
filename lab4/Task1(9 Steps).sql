@@ -1,4 +1,5 @@
 --Step 1:
+drop table t2;
 CREATE TABLE t2 AS
 SELECT TRUNC( rownum / 100 ) id, rpad( rownum,100 ) t_pad
 FROM dual
@@ -7,6 +8,7 @@ CONNECT BY rownum < 100000;
 CREATE INDEX t2_idx1 ON t2( id );
 --Step 3:
 --Block count:
+PURGE RECYCLEBIN;
 select blocks from user_segments where segment_name = 'T2';
 --Used Block Count: 
 select count(distinct (dbms_rowid.rowid_block_number(rowid))) block_ct from t2 ;
@@ -23,19 +25,40 @@ DELETE FROM t2;
 SET autotrace ON;
 select blocks from user_segments where segment_name = 'T2';
 --2
-    SET autotrace ON;
-    select count(distinct (dbms_rowid.rowid_block_number(rowid))) block_ct from t2 ;
+SET autotrace ON;
+select count(distinct (dbms_rowid.rowid_block_number(rowid))) block_ct from t2 ;
 --3
 SET autotrace ON;
 SELECT COUNT( * )
-   FROM t2 ;
+FROM t2 ;
 --Step 6: Insert 1 row
 INSERT INTO t2
 ( ID, T_PAD )
 VALUES
-(  1,'1' );
-
+(1,'1');
 COMMIT;
 --Step 7:  Repeat Step 3 and collect results.
+--1
+SET autotrace ON;
+select blocks from user_segments where segment_name = 'T2';
+--2
+SET autotrace ON;
+select count(distinct (dbms_rowid.rowid_block_number(rowid))) block_ct from t2 ;
+--3
+SET autotrace ON;
+SELECT COUNT( * )
+FROM t2 ;
 --Step 8: Truncate Table
 TRUNCATE TABLE t2;
+--1
+SET autotrace ON;
+select blocks from user_segments where segment_name = 'T2';
+--2
+SET autotrace ON;
+select count(distinct (dbms_rowid.rowid_block_number(rowid))) block_ct from t2 ;
+--3
+SET autotrace ON;
+SELECT COUNT( * )
+FROM t2 ;
+SELECT * FROM t2;
+drop table t2;
