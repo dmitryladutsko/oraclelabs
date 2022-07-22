@@ -41,6 +41,9 @@ select * from sys.all_views
 where OWNER in ('U_DW_REFERENCES','U_DW_EXT_REFERENCES');
 
 select * from dba_tablespaces;
+
+
+alter session set current_schema = u_dw_references;
 --selects for Step 2
 select * from t_cntr_group_systems;
 select * from lc_cntr_group_systems;
