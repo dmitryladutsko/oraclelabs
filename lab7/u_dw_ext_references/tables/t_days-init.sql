@@ -9,3 +9,4 @@ DAY_NUMBER_IN_WEEK          ,
 DAY_NUMBER_IN_MONTH         ,
 DAY_NUMBER_IN_YEAR         
 FROM cls_days;
+commit;
