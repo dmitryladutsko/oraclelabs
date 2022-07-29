@@ -8,11 +8,11 @@ SIZE 150M
 -------------------------------------
 select creation_time, name from v$datafile;
 
-select name, CTIME from U$ERS;
+SELECT * from t_dates;
 
-SELECT * FROM dba_users;
-
-DROP USER DL_PRODUCTS CASCADE; 
+SELECT * FROM dba_users order by CREATED desc;
+commit;
+DROP USER DM_GEN_PERIODS CASCADE; 
 
 DROP TABLESPACE ts_dw_data_01
 INCLUDING CONTENTS AND DATAFILES;
@@ -81,9 +81,11 @@ grant connect, resource, create view to DW_CLEANSING;
 
 
 -- DW level
+DROP TABLESPACE ts_dw_data_01 INCLUDING CONTENTS AND DATAFILES CASCADE CONSTRAINTS;
+
 create tablespace ts_dw_data_01
 datafile '/oracle/u02/oradata/DLadutkodb/ts_dw_data_01.dat'
-size 150M
+size 150M reuse 
     autoextend on next 50M
 logging
 segment space management auto
@@ -95,6 +97,7 @@ default tablespace ts_dw_data_01;
 
 grant connect, resource to DW_DATA;
 
+--DROP USER DW_DATA CASCADE; 
 
 -- DW - Prepare star cleansing level
 create tablespace ts_sa_dw_cl_01
@@ -191,3 +194,5 @@ identified by "%PWD%"
 default tablespace ts_sa_dim_borrowers_01;
 
 grant connect, resource, create view to DM_BORROWERS;
+
+-- dim geo_locations...
