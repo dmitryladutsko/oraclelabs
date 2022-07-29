@@ -1,8 +1,10 @@
 alter session set current_schema = DW_DATA;
 
+drop table fact_sales;
+
 create table FACT_SALES (
    SALES_ID             NUMBER(22,0)          not null,
-   TIME_ID              DATE,
+   TIME_ID              DATE      not null,
    PERIOD_ID            NUMBER(22,0),
    CUSTOMER_ID          NUMBER(22,0),
    GEO_ID               NUMBER(22),
@@ -15,13 +17,46 @@ create table FACT_SALES (
    MAD                  numeric(5,2),
    constraint PK_FACT_SALES primary key (SALES_ID)
 )
-    partition by range (TIME_ID) subpartition by hash (CUSTOMER_ID)
+ /*   partition by range (TIME_ID) subpartition by hash (CUSTOMER_ID)
         SUBPARTITIONS 4 
         (partition sales_q1 values less than (to_date('2021-03-01', 'YYYY-MM-DD')),
          partition sales_q2 values less than (to_date('2021-06-01', 'YYYY-MM-DD')),
          partition sales_q3 values less than (to_date('2021-09-01', 'YYYY-MM-DD')),
          partition sales_q4 values less than (to_date('2021-12-31', 'YYYY-MM-DD'))
-        );
+        );*/
+--drop table FACT_SALES;
+PARTITION BY RANGE (TIME_ID) INTERVAL (NUMTODSINTERVAL(1,'DAY'))
+subpartition by hash(CUSTOMER_ID) subpartitions 4
+(
+    PARTITION QUARTER_1 VALUES LESS THAN('04')
+    (
+      subpartition QUARTER_1_sub_1,
+      subpartition QUARTER_1_sub_2,
+      subpartition QUARTER_1_sub_3,
+      subpartition QUARTER_1_sub_4
+    ),
+    PARTITION QUARTER_2 VALUES LESS THAN('07')
+    (
+      subpartition QUARTER_2_sub_1,
+      subpartition QUARTER_2_sub_2,
+      subpartition QUARTER_2_sub_3,
+      subpartition QUARTER_2_sub_4
+     ),
+     PARTITION QUARTER_3 VALUES LESS THAN('10')
+    (
+       subpartition QUARTER_3_sub_1,
+      subpartition QUARTER_3_sub_2,
+      subpartition QUARTER_3_sub_3,
+      subpartition QUARTER_3_sub_4
+    ),
+     PARTITION QUARTER_4 VALUES LESS THAN('13')
+    (
+      subpartition QUARTER_4_sub_1,
+      subpartition QUARTER_4_sub_2,
+      subpartition QUARTER_4_sub_3,
+      subpartition QUARTER_4_sub_4
+    )
+);
 
 /* Index: "Reference_1_FK"                                      */
 

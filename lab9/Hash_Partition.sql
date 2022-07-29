@@ -97,10 +97,4 @@ SELECT
 ALTER TABLE calendar02
      COALESCE PARTITION;
     
-alter table calendar02
-    Truncate PARTITION SYS_P743;
-    
-alter table calendar02
-    drop PARTITION SYS_P743;
-    
 drop table calendar02;
