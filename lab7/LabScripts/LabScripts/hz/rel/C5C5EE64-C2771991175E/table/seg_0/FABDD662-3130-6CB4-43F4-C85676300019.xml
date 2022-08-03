@@ -1,0 +1,337 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FABDD662-3130-6CB4-43F4-C85676300019" schemaObject="93AAFA88-606D-3A5A-2734-C59A530AFF91" name="DIM_TIME">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>DIM_TIME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TIME_ID" id="473583BB-68A0-4A79-E48A-3A326C2C505D">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>TIME_ID</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY_NAME" id="5E5A188E-0550-7989-543D-9A0A5ECBC8F8">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>DAY_NAME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>44 BYTE</dataTypeSize>
+<ownDataTypeParameters>44 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY_NUMBER_IN_WEEK" id="C9EBB6DA-BE34-4944-6D1A-07CC0EC78BAC">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>DAY_NUMBER_IN_WEEK</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY_NUMBER_IN_MONTH" id="1540DE21-EF75-E3C5-5A94-6C636EF6FD8C">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>DAY_NUMBER_IN_MONTH</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY_NUMBER_IN_YEAR" id="80022B32-47F0-CEE6-2015-F00AC3061808">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>DAY_NUMBER_IN_YEAR</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_WEEK_NUMBER" id="543B3430-4B89-FDBA-044C-EDA7F6FA34A1">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>CALENDAR_WEEK_NUMBER</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WEEK_ENDING_DATE" id="9A39F320-41AF-7BD8-3C06-130C34BD1418">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>WEEK_ENDING_DATE</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_MONTH_NUMBER" id="287266BE-CFE1-FA1A-1785-3251313D9E37">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>CALENDAR_MONTH_NUMBER</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAYS_IN_CAL_MONTH" id="B2F48F68-61B4-C1F9-3E48-B3345B6E8EE1">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>DAYS_IN_CAL_MONTH</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_OF_CAL_MONTH" id="5C226980-89AB-09B5-DD42-A3305807C1DE">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>END_OF_CAL_MONTH</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_MONTH_NAME" id="4298F261-BDC4-6E30-A2E6-1058DA895548">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>CALENDAR_MONTH_NAME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAYS_IN_CAL_QUARTER" id="A92CF01D-D163-4246-FEAC-25D03DD90AE3">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>DAYS_IN_CAL_QUARTER</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEG_OF_CAL_QUARTER" id="2B52B8F8-D4F4-8593-F980-D4844723D1A1">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>BEG_OF_CAL_QUARTER</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_OF_CAL_QUARTER" id="E6AB7F71-3145-4CD3-1332-D000B7F73A20">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>END_OF_CAL_QUARTER</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_QUARTER_NUMBER" id="7D0B76BF-0562-F4A0-8725-212EF696284F">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>CALENDAR_QUARTER_NUMBER</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_YEAR" id="E6A85BCE-CF38-8DD4-68A2-D10BFD015E25">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>CALENDAR_YEAR</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAYS_IN_CAL_YEAR" id="A1B2D175-36C5-3D1D-A26D-25BE7E49B02C">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>DAYS_IN_CAL_YEAR</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEG_OF_CAL_YEAR" id="64CF73DE-0141-586F-AB01-52DA96574750">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>BEG_OF_CAL_YEAR</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_OF_CAL_YEAR" id="73D742DD-D935-993D-CEE2-26B57F66870D">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_TIME</sourceObjSchema>
+<sourceObjName>END_OF_CAL_YEAR</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B92EF88-EFA9-8BD6-561C-38D3DBA9AEE3" name="PK_DIM_TIME">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_DIM_TIME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:33 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="473583BB-68A0-4A79-E48A-3A326C2C505D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26DACD77-9BDE-37AB-8DBA-1A61672E7920" schemaObject="93AAFA88-606D-3A5A-2734-C59A530AFF91" name="IDX_DIM_TIME">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>IDX_DIM_TIME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:32 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="473583BB-68A0-4A79-E48A-3A326C2C505D" sortOrder="DESC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3B0EB0B-E310-0A67-C9DD-9F911E2E18E1" schemaObject="93AAFA88-606D-3A5A-2734-C59A530AFF91" name="PK_DIM_TIME">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_DIM_TIME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:32 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="473583BB-68A0-4A79-E48A-3A326C2C505D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DIM_GEN_PERIODS" directorySegmentName="seg_0" id="71378988-0189-C0AF-FB9D-57D2DA496AD0">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<schemaObject>93AAFA88-606D-3A5A-2734-C59A530AFF91</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8A414144-DAAB-965F-0BE6-FB91995D46F5</segment>
+<tableSpace>31744665-B61F-9C06-831A-C0EE92F393A2</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="INSERT_DT" id="289D82BB-0629-8FD4-29D5-CE7EB57E7466">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPDATE_DT" id="50A1432D-39DF-CBB1-5F69-0BFC89B9EF11">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="START_DT" id="B16B5CBD-E28B-3E0B-B275-612A3FD45B2D">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END_DT" id="B486D7A7-5769-A82D-7127-43C694A5B1E9">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PERIOD_ID" id="F0E73D2F-8B10-B50A-FADE-8172B5E1EAF0">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PERIOD_NAME" id="FBE10B4E-C411-73B1-49FB-E9817E82E899">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_DIM_GEN_PERIODS" id="313D0A22-825C-835E-D818-72701CEF675A">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:32 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<schemaObject>93AAFA88-606D-3A5A-2734-C59A530AFF91</schemaObject>
+<segment>84D9AD09-9786-324A-D6F6-0B10116AF928</segment>
+<tableSpace>31744665-B61F-9C06-831A-C0EE92F393A2</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_DIM_GEN_PERIODS" id="A28FF736-9B55-4C40-3CE4-D06B650F4476">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:33 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<segment>84D9AD09-9786-324A-D6F6-0B10116AF928</segment>
+<tableSpace>31744665-B61F-9C06-831A-C0EE92F393A2</tableSpace>
+<existingIndex>313D0A22-825C-835E-D818-72701CEF675A</existingIndex>
+<indexSegment>84D9AD09-9786-324A-D6F6-0B10116AF928</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

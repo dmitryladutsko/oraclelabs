@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DIM_PRODUCTS" directorySegmentName="seg_0" id="D698869A-55F1-0B46-C7DD-56F2A872DDC0">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<schemaObject>93AAFA88-606D-3A5A-2734-C59A530AFF91</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8A414144-DAAB-965F-0BE6-FB91995D46F5</segment>
+<tableSpace>31744665-B61F-9C06-831A-C0EE92F393A2</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COLOR_NAME" id="0B3B5DC2-4CA6-CA07-92BE-F51993967840">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPDATE_DT" id="1636AB8B-E188-AF95-1551-F0B8A13C7A6A">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MODEL_NAME" id="2188B432-7DB0-4D6C-1ACD-12BDB63E0FA0">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRICE" id="45238DB5-3EF1-014E-8261-63FFBFB8C7E7">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INSERT_DT" id="4D9A5BEA-E6A6-4F2A-D660-EA9A96023142">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEMORY_AMOUNT" id="629E98CA-64BF-E17E-1DEA-7B18CA75750C">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRODUCT_NAME" id="6A900C2F-0EBE-E6CF-396C-6BC7C39DB861">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MODEL_ID" id="902FC1EE-0662-FB47-5E13-A3FD0DF81728">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COLOR_ID" id="C128924E-0E8A-6909-223A-BAFC34227BF8">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRODUCT_ID" id="D4B74A71-588F-3DF3-BB82-00C584672398">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_DIM_PRODUCTS" id="BDA4B3E2-F9A5-F49E-C01A-319133A3CF53">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:32 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<schemaObject>93AAFA88-606D-3A5A-2734-C59A530AFF91</schemaObject>
+<segment>84D9AD09-9786-324A-D6F6-0B10116AF928</segment>
+<tableSpace>31744665-B61F-9C06-831A-C0EE92F393A2</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_DIM_PRODUCTS" id="2B7EA684-2BAD-C9E9-4474-867B492E4D5C">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:33 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<segment>84D9AD09-9786-324A-D6F6-0B10116AF928</segment>
+<tableSpace>31744665-B61F-9C06-831A-C0EE92F393A2</tableSpace>
+<existingIndex>BDA4B3E2-F9A5-F49E-C01A-319133A3CF53</existingIndex>
+<indexSegment>84D9AD09-9786-324A-D6F6-0B10116AF928</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

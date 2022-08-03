@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE3ED119-C544-BB8A-38DC-9AB56D2BFD3E" schemaObject="93AAFA88-606D-3A5A-2734-C59A530AFF91" name="DIM_STORE">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>DIM_STORE</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STORE_ID" id="3B9C7023-8646-0831-B381-DD548195272D">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_STORE</sourceObjSchema>
+<sourceObjName>STORE_ID</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_ID" id="30E21F2B-A19C-A54B-9961-6F11A88EDBC9">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_STORE</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="FAB2F91C-4E07-8620-2D85-03B4525EFBEF">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_STORE</sourceObjSchema>
+<sourceObjName>PHONE</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="AA529AF2-B8FC-B2DE-6530-C17989F2F3D2">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_STORE</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="9DE46A38-B0EA-5A17-A04C-3639A1EF5795">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_STORE</sourceObjSchema>
+<sourceObjName>CITY</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY" id="D5C6694B-E844-634B-C913-3C5CF42B8AA0">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_STORE</sourceObjSchema>
+<sourceObjName>COUNTRY</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION" id="AB00E032-1D41-9515-2634-93FE97FA5A54">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_STORE</sourceObjSchema>
+<sourceObjName>REGION</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="22783647-79C7-7104-7497-769EF31345FC" name="STORE_ID_PK">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>STORE_ID_PK</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:33 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B9C7023-8646-0831-B381-DD548195272D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38CFD42E-1538-F089-20DA-0730CF432839" schemaObject="93AAFA88-606D-3A5A-2734-C59A530AFF91" name="STORE_ID_PK">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>STORE_ID_PK</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:32 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B9C7023-8646-0831-B381-DD548195272D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DIM_TIME" directorySegmentName="seg_0" id="FABDD662-3130-6CB4-43F4-C85676300019">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<schemaObject>93AAFA88-606D-3A5A-2734-C59A530AFF91</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8A414144-DAAB-965F-0BE6-FB91995D46F5</segment>
+<tableSpace>31744665-B61F-9C06-831A-C0EE92F393A2</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DAY_NUMBER_IN_MONTH" id="1540DE21-EF75-E3C5-5A94-6C636EF6FD8C">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALENDAR_MONTH_NUMBER" id="287266BE-CFE1-FA1A-1785-3251313D9E37">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BEG_OF_CAL_QUARTER" id="2B52B8F8-D4F4-8593-F980-D4844723D1A1">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALENDAR_MONTH_NAME" id="4298F261-BDC4-6E30-A2E6-1058DA895548">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIME_ID" id="473583BB-68A0-4A79-E48A-3A326C2C505D">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALENDAR_WEEK_NUMBER" id="543B3430-4B89-FDBA-044C-EDA7F6FA34A1">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END_OF_CAL_MONTH" id="5C226980-89AB-09B5-DD42-A3305807C1DE">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAY_NAME" id="5E5A188E-0550-7989-543D-9A0A5ECBC8F8">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BEG_OF_CAL_YEAR" id="64CF73DE-0141-586F-AB01-52DA96574750">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END_OF_CAL_YEAR" id="73D742DD-D935-993D-CEE2-26B57F66870D">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALENDAR_QUARTER_NUMBER" id="7D0B76BF-0562-F4A0-8725-212EF696284F">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAY_NUMBER_IN_YEAR" id="80022B32-47F0-CEE6-2015-F00AC3061808">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WEEK_ENDING_DATE" id="9A39F320-41AF-7BD8-3C06-130C34BD1418">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAYS_IN_CAL_YEAR" id="A1B2D175-36C5-3D1D-A26D-25BE7E49B02C">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAYS_IN_CAL_QUARTER" id="A92CF01D-D163-4246-FEAC-25D03DD90AE3">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAYS_IN_CAL_MONTH" id="B2F48F68-61B4-C1F9-3E48-B3345B6E8EE1">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DAY_NUMBER_IN_WEEK" id="C9EBB6DA-BE34-4944-6D1A-07CC0EC78BAC">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALENDAR_YEAR" id="E6A85BCE-CF38-8DD4-68A2-D10BFD015E25">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="END_OF_CAL_QUARTER" id="E6AB7F71-3145-4CD3-1332-D000B7F73A20">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_DIM_TIME" id="26DACD77-9BDE-37AB-8DBA-1A61672E7920">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:32 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<schemaObject>93AAFA88-606D-3A5A-2734-C59A530AFF91</schemaObject>
+<segment>84D9AD09-9786-324A-D6F6-0B10116AF928</segment>
+<tableSpace>31744665-B61F-9C06-831A-C0EE92F393A2</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_DIM_TIME" id="D3B0EB0B-E310-0A67-C9DD-9F911E2E18E1">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:32 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<schemaObject>93AAFA88-606D-3A5A-2734-C59A530AFF91</schemaObject>
+<segment>84D9AD09-9786-324A-D6F6-0B10116AF928</segment>
+<tableSpace>31744665-B61F-9C06-831A-C0EE92F393A2</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_DIM_TIME" id="4B92EF88-EFA9-8BD6-561C-38D3DBA9AEE3">
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:33 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<segment>84D9AD09-9786-324A-D6F6-0B10116AF928</segment>
+<tableSpace>31744665-B61F-9C06-831A-C0EE92F393A2</tableSpace>
+<existingIndex>D3B0EB0B-E310-0A67-C9DD-9F911E2E18E1</existingIndex>
+<indexSegment>84D9AD09-9786-324A-D6F6-0B10116AF928</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

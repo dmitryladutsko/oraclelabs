@@ -1,0 +1,304 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4B56156-CE00-A1F5-AEBA-02BA2D4614BF" schemaObject="93AAFA88-606D-3A5A-2734-C59A530AFF91" name="DIM_GEO_LOCATIONS">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>DIM_GEO_LOCATIONS</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GEO_ID" id="FFAF7A22-952E-8AF3-3FF2-BAE03711F2AA">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>GEO_ID</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_ID" id="6E6A61E5-A33A-0F11-D398-2E8EC844C3D6">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_ID</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_NAME" id="A75E1D17-04F5-EA22-1F43-554409DBCA9E">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_NAME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_CODE" id="1F96135F-3A40-EB64-F866-DE14951A4A4C">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_CODE</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_CODE_A2" id="34956A94-1FE7-9719-75EF-871D5BD4D49E">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_CODE_A2</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_CODE_A3" id="009ACCB2-FA9B-9E78-7B28-52E74199B7CC">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_CODE_A3</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_DESC" id="83A798C0-84FB-3EE2-69ED-98C8AF11729E">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>COUNTRY_DESC</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGIO_ID" id="2366366F-543F-3753-206F-9F731073F13E">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>REGIO_ID</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGIO_CODE" id="979E2EA1-899D-9C10-56F9-2B087439FFE5">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>REGIO_CODE</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGIO_NAME" id="C7EC9586-B5FE-3012-5A7B-68F312BA77DE">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>REGIO_NAME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGIO_DESC" id="32BDD630-9B02-2A27-C96F-8EBCCFB9ADEA">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>REGIO_DESC</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY_ID" id="D28E17C4-1582-6293-B87B-C7B1FEDD870E">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>CITY_ID</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY_CODE" id="B3048984-A263-F330-3C0F-B5DB049AA6CE">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>CITY_CODE</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY_NAME" id="A0C8B148-FB63-794B-45A7-D12B12F407AF">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>CITY_NAME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY_DESC" id="411884D4-5578-C8EB-FCAC-7E88E55647DB">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>CITY_DESC</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSERT_DT" id="99B77851-2C67-5691-BE4B-56F8E8C27DD5">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>INSERT_DT</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATE_DT" id="B02841E1-C6E9-FE6C-FE60-8B93F9D266AA">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_GEO_LOCATIONS</sourceObjSchema>
+<sourceObjName>UPDATE_DT</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2EF5B67-BC31-D0DF-9A42-4462A77B86AB" name="PK_DIM_GEO">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_DIM_GEO</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:33 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFAF7A22-952E-8AF3-3FF2-BAE03711F2AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="277CB4E0-7351-026D-B9D9-0FF23F15A954" schemaObject="93AAFA88-606D-3A5A-2734-C59A530AFF91" name="PK_DIM_GEO">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_DIM_GEO</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:32 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFAF7A22-952E-8AF3-3FF2-BAE03711F2AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

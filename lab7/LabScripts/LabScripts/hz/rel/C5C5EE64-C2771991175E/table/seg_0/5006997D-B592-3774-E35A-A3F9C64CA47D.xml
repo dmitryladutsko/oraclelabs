@@ -1,0 +1,238 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5006997D-B592-3774-E35A-A3F9C64CA47D" schemaObject="93AAFA88-606D-3A5A-2734-C59A530AFF91" name="DIM_CUSTOMERS">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>DIM_CUSTOMERS</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:30 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUSTOMER_ID" id="0FEA21A8-B2F5-FF81-DBA7-9F993489494D">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>CUSTOMER_ID</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,22,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="8A97A761-0A1F-BDF6-F51F-15264BA63015">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>FIRST_NAME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="8FC5BDB6-FB32-C298-C14D-253AD6C5A333">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>LAST_NAME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY" id="75D3145B-04FC-8BEE-9144-D77E3D901E6B">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>COUNTRY</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="A9EFACA8-D8A6-F569-0764-378D2612FF91">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>CITY</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADRESS" id="C267C8C0-3CB6-734E-2B11-D8712FD7781A">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>ADRESS</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="ACC1E295-C604-C76F-F3B2-4143E16D5F4C">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="C71D0BEC-3D88-51C8-E220-37B827D587DD">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>PHONE</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AGE" id="D9AE168D-1E4F-D347-B403-B891C2334C5C">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>AGE</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALID_FROM" id="0280E26E-3EFA-5388-AE38-C482F34A12E3">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>VALID_FROM</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALID_TO" id="5A9D18F0-E343-556C-EEF9-EF77E80B774A">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>VALID_TO</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IS_ACTIVE" id="6FFE0D19-B7A0-DCB2-56B9-40E4C9169D60">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>IS_ACTIVE</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSERT_DT" id="EDCE67B9-5B5A-C249-12B1-D55E43EF6074">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_CUSTOMERS</sourceObjSchema>
+<sourceObjName>INSERT_DT</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E9BE5EE-C1B5-2B84-4D9E-D41D7C567224" name="PK_DIM_CUSTOMERS">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_DIM_CUSTOMERS</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:33 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FEA21A8-B2F5-FF81-DBA7-9F993489494D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9856E4E1-F6FA-DA8C-6E05-427EB981CA5A" schemaObject="93AAFA88-606D-3A5A-2734-C59A530AFF91" name="PK_DIM_CUSTOMERS">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_DIM_CUSTOMERS</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:32 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FEA21A8-B2F5-FF81-DBA7-9F993489494D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

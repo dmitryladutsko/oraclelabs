@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5EE5AEA1-340A-4BF2-E91B-C56C31078D9C" schemaObject="93AAFA88-606D-3A5A-2734-C59A530AFF91" name="DIM_PAYMENT_METHOD">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>DIM_PAYMENT_METHOD</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PAYMENT_METHOD_ID" id="D08B1D5A-488B-F82E-5369-553FD194E0DB">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_PAYMENT_METHOD</sourceObjSchema>
+<sourceObjName>PAYMENT_METHOD_ID</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_METHOD_NAME" id="74F0CEB5-1B15-CE55-81AD-8C2F25433464">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_PAYMENT_METHOD</sourceObjSchema>
+<sourceObjName>PAYMENT_METHOD_NAME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BANK_NAME" id="5A2E9FC3-F268-49D0-EB7A-306EA43862B2">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DIM_PAYMENT_METHOD</sourceObjSchema>
+<sourceObjName>BANK_NAME</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:31 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33F2F023-8BCB-59FD-5D7F-0431F7C54BEB" name="PK_PAYMENT_METHOD_ID">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_PAYMENT_METHOD_ID</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:33 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D08B1D5A-488B-F82E-5369-553FD194E0DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E6744CE-B4D5-21DD-DD92-1C6C5F381AA6" schemaObject="93AAFA88-606D-3A5A-2734-C59A530AFF91" name="PK_PAYMENT_METHOD_ID">
+<sourceConnName>DmitryOffice</sourceConnName>
+<sourceObjSchema>DW_DATA</sourceObjSchema>
+<sourceObjName>PK_PAYMENT_METHOD_ID</sourceObjName>
+<createdBy>Dmitry</createdBy>
+<createdTime>2022-08-02 09:36:32 UTC</createdTime>
+<ownerDesignName>hz</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D08B1D5A-488B-F82E-5369-553FD194E0DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

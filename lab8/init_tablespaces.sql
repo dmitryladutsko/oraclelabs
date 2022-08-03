@@ -196,3 +196,21 @@ default tablespace ts_sa_dim_borrowers_01;
 grant connect, resource, create view to DM_BORROWERS;
 
 -- dim geo_locations...
+--???????
+
+
+
+
+create tablespace ts_sa_date
+datafile '/oracle/u02/oradata/DLadutkodb/ts_sa_date.dat'
+size 150M
+    autoextend on next 50M
+logging
+segment space management auto
+extent management local;
+
+create user SA_DATE
+identified by "%PWD%"
+default tablespace ts_sa_date;
+
+grant connect, resource to SA_DATE;
