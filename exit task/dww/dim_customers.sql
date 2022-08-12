@@ -13,7 +13,7 @@ create table DIM_CUSTOMERS (
    VALID_FROM           DATE,
    VALID_TO             DATE                  not null,
    IS_ACTIVE            VARCHAR2(4),
-   INSERT_DT            DATE,   
+   INSERT_DT            DATE,
    CONSTRAINT PK_DIM_CUSTOMERS PRIMARY KEY ( CUSTOMER_ID )
 );
 

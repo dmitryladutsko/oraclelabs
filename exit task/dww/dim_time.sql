@@ -1,6 +1,7 @@
 alter session set current_schema = DW_DATA;
 
 create table DIM_TIME (
+TIME_ID                       DATE  ,       
 DAY_NAME                      VARCHAR2(44) ,
 DAY_NUMBER_IN_WEEK            VARCHAR2(1)  ,
 DAY_NUMBER_IN_MONTH           VARCHAR2(2)  ,
@@ -18,5 +19,9 @@ CALENDAR_QUARTER_NUMBER       VARCHAR2(1) ,
 CALENDAR_YEAR                 VARCHAR2(4),  
 DAYS_IN_CAL_YEAR              NUMBER  ,     
 BEG_OF_CAL_YEAR               DATE   ,      
-END_OF_CAL_YEAR               DATE     
+END_OF_CAL_YEAR               DATE  ,       
+   constraint PK_DIM_TIME primary key (TIME_ID)
 );
+CREATE INDEX idx_dim_time ON dim_time(time_id DESC);
+
+DROP INDEX idx_dim_time;

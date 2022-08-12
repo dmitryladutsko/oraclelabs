@@ -1,8 +1,8 @@
-alter session set current_schema = DW_DATA;
+alter session set current_schema = SA_PRODUCTS;
 
-create table DIM_PRODUCTS (
-   PRODUCT_NAME         VARCHAR2(10),
-   MODEL_NAME           VARCHAR2(10),
+create table SA_PRODUCTS (
+   PRODUCT_NAME         VARCHAR2(30),
+   MODEL_NAME           VARCHAR2(20),
    MEMORY_AMOUNT        NUMBER(22,0),
    COLOR_NAME           CHAR(25),
    PRICE                NUMBER(10),

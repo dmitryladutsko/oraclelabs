@@ -17,5 +17,6 @@ create table DIM_GEO_LOCATIONS (
    CITY_NAME            CHAR(25),
    CITY_DESC            VARCHAR2(150),
    INSERT_DT            DATE,
-   UPDATE_DT            DATE
+   UPDATE_DT            DATE,
+   constraint PK_DIM_GEO primary key (GEO_ID)
 );

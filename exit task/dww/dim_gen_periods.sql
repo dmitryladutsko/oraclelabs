@@ -7,4 +7,5 @@ create table DIM_GEN_PERIODS (
    END_DT               DATE,
    INSERT_DT            DATE,
    UPDATE_DT            DATE,
+   constraint PK_DIM_GEN_PERIODS primary key (PERIOD_ID)
 );
