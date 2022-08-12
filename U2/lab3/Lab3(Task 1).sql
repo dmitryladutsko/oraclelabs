@@ -103,3 +103,12 @@ SELECT
     *
 FROM
     geo_denormalized_data;
+    
+--------------------------------------------------------------------------------
+    
+alter session set current_schema=u_dw_references;
+SELECT 
+    count(*)
+FROM
+    geo_denormalized_data
+WHERE GEO_ID IS NULL;
