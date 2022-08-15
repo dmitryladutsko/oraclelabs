@@ -1,3 +1,5 @@
+alter session set current_schema = SA_CUSTOMERS;
+
 DROP TABLE SA_PAYMENT_METHODS;
 
 alter session set current_schema = SA_CUSTOMERS;
@@ -127,7 +129,7 @@ INSERT INTO SA_PAYMENT_METHODS
                 FROM
                     dual
                 CONNECT BY
-                    level <= 100
+                    level <= 10
             ) a
     )
     SELECT

@@ -149,7 +149,7 @@ INSERT INTO SA_STORES
                 FROM
                     dual
                 CONNECT BY
-                    level <= 100
+                    level <= 30
             ) a
     )
     SELECT

@@ -16,8 +16,8 @@
    IS_ACTIVE                     VARCHAR2(6),
    CUSTOMER_SALE_DATE            DATE,
     ----------PAYMENT METHOD
---    PAYMENT_METHOD_NAME VARCHAR2(40) NOT NULL,
---    BANK_NAME   VARCHAR2(40) NOT NULL,
+    PAYMENT_METHOD_NAME VARCHAR2(40) NOT NULL,
+    BANK_NAME   VARCHAR2(40) NOT NULL,
    -----------PRODUCT
    PRODUCT_NAME         VARCHAR2(30),
    MODEL_NAME           VARCHAR2(20),
@@ -30,13 +30,14 @@
                  
      alter session set current_schema=SA_CUSTOMERS;
      INSERT INTO SA_TRANSACTIONS 
-        SELECT C.*, P.*
+        SELECT C.*,PM.*, P.*
              FROM SA_CUSTOMERS.SA_CUSTOMERS C 
-                CROSS JOIN SA_PRODUCTS.SA_PRODUCTS P 
+                CROSS JOIN SA_PRODUCTS.SA_PRODUCTS P
+                    CROSS JOIN SA_CUSTOMERS.SA_PAYMENT_METHODS PM
              --       right outer 
         WHERE C.CUSTOMER_SALE_DATE > TO_DATE( '01.01.20', 'MM/DD/YY' ) AND C.CUSTOMER_SALE_DATE < TO_DATE( '02.01.22', 'MM/DD/YY' );
 
-       -- SELECT * FROM SA_TRANSACTIONS;
+       -- alter session set current_schema=SA_CUSTOMERS;SELECT * FROM SA_TRANSACTIONS;
        -- SELECT count(*) FROM SA_TRANSACTIONS
         select count (*),sum(price) as total_revenue, FIRST_NAME_CUSTOMER as CUSTOMER
             from sa_transactions 

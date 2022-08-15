@@ -440,7 +440,7 @@ INSERT INTO SA_EMPLOYEES
                 FROM
                     dual
                 CONNECT BY
-                    level <= 1500
+                    level <= 1000
             ) a
     )
     SELECT
@@ -476,6 +476,7 @@ INSERT INTO SA_EMPLOYEES
 
 --------------------------------------------------------------------------------
 alter session set current_schema = SA_PRODUCTS;
+
 select 
     *
 from
@@ -503,6 +504,9 @@ Start  With chief_id = 0
 Order  Siblings By first_name_employee;
 
 commit;
+
+alter session set current_schema = SA_PRODUCTS;
+DESCRIBE SA_PRODUCTS.SA_EMPLOYEES
 
 
 --select * from sa_employees order by employee_id

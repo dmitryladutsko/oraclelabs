@@ -270,7 +270,7 @@ INSERT INTO SA_PRODUCTS
             TO_CHAR(TO_DATE('01-01-2020','dd-mm-yyyy'),'J'),
              TO_CHAR(TO_DATE('01-01-2022','dd-mm-yyyy'),'J'))),'J') as a
         FROM DUAL
-        CONNECT BY level <= 17
+        CONNECT BY level <= 12
         ), create_product AS (
         SELECT
             a.* ,
@@ -287,7 +287,7 @@ INSERT INTO SA_PRODUCTS
                 FROM
                     dual
                 CONNECT BY
-                    level <= 35
+                    level <= 20
             ) a
     )
     SELECT
@@ -307,4 +307,4 @@ INSERT INTO SA_PRODUCTS
         LEFT OUTER JOIN create_color           p_color           ON cr_product.id_color = p_color.id
         LEFT OUTER JOIN create_price           p_price           ON cr_product.id_price = p_price.id
         LEFT OUTER JOIN create_insert_date           p_ins_date           ON cr_product.id_insert_date = p_ins_date.id
---select * from SA_PRODUCTS
+--alter session set current_schema = SA_PRODUCTS;select * from SA_PRODUCTS

@@ -1,27 +1,23 @@
 alter session set current_schema = DW_DATA;
-
 create table DIM_TIME (
-TIME_ID                       DATE  ,       
-DAY_NAME                      VARCHAR2(44) ,
-DAY_NUMBER_IN_WEEK            VARCHAR2(1)  ,
-DAY_NUMBER_IN_MONTH           VARCHAR2(2)  ,
-DAY_NUMBER_IN_YEAR            VARCHAR2(3)  ,
-CALENDAR_WEEK_NUMBER          VARCHAR2(1)  ,
-WEEK_ENDING_DATE              DATE         ,
-CALENDAR_MONTH_NUMBER         VARCHAR2(2)  ,
-DAYS_IN_CAL_MONTH             VARCHAR2(2)  ,
-END_OF_CAL_MONTH              DATE         ,
-CALENDAR_MONTH_NAME           VARCHAR2(32) ,
-DAYS_IN_CAL_QUARTER           NUMBER       ,
-BEG_OF_CAL_QUARTER            DATE         ,
-END_OF_CAL_QUARTER            DATE         ,
-CALENDAR_QUARTER_NUMBER       VARCHAR2(1) , 
-CALENDAR_YEAR                 VARCHAR2(4),  
-DAYS_IN_CAL_YEAR              NUMBER  ,     
-BEG_OF_CAL_YEAR               DATE   ,      
-END_OF_CAL_YEAR               DATE  ,       
-   constraint PK_DIM_TIME primary key (TIME_ID)
+    date_id                       DATE         ,
+    beg_of_year                   DATE         ,      
+    end_of_year                   DATE         ,    
+    day_name                      VARCHAR2(44) ,
+    day_number_in_week            VARCHAR2(1)  ,
+    day_number_in_month           VARCHAR2(2)  ,
+    day_number_in_year            VARCHAR2(3)  ,
+    calendar_week_number          VARCHAR2(1)  ,
+    week_ending_date              DATE         ,
+    calendar_month_number         VARCHAR2(2)  ,
+    days_in_month                 VARCHAR2(2)  ,
+    end_of_month                  DATE         ,
+    end_of_quarter                VARCHAR2(32) ,
+    quarter_number                VARCHAR2(1)  , 
+    n_year                        VARCHAR2(4)  ,  
+    days_in_cal_year              NUMBER       ,
+   constraint PK_DIM_TIME primary key (date_id)
 );
-CREATE INDEX idx_dim_time ON dim_time(time_id DESC);
+CREATE INDEX idx_dim_time ON dim_time(date_id DESC);
 
 DROP INDEX idx_dim_time;

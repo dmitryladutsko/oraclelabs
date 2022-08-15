@@ -1,4 +1,5 @@
 alter session set current_schema = DW_DATA;
+--drop table dim_gen_periods
 
 create table DIM_GEN_PERIODS (
    PERIOD_ID            NUMBER(22,0)          not null,

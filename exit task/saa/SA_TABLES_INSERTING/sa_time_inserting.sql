@@ -83,7 +83,7 @@ FROM
       TO_DATE( '01/01/2019', 'MM/DD/YYYY' ) sd,
       rownum rn
     FROM dual
-      CONNECT BY level <= 3000
+      CONNECT BY level <= 730
   );
   
   select * from sa_time;
