@@ -20,19 +20,18 @@
 ---------------        group by cube    
             
             alter session set current_schema=SA_CUSTOMERS;                                         
-            select CUSTOMER_SALE_DATE as date_num, sum(price) as Revenue
+            select CUSTOMER_SALE_DATE as date_num, sum(price) as Revenue, FIRST_NAME_CUSTOMER AS  customer
             from sa_transactions 
                 where CUSTOMER_SALE_DATE = to_date ('14.04.20' ,'DD/MM/YY')
                 
             group by cube (CUSTOMER_SALE_DATE, FIRST_NAME_CUSTOMER);
-            
+                
 -----------------------------------            
 ---------------        grouping ()
 
             alter session set current_schema=SA_CUSTOMERS;                                         
             select CUSTOMER_SALE_DATE as date_num, count (rownum) as toal_amount, 
             grouping (CUSTOMER_SALE_DATE) as Grouping
-          --  grouping (CUSTOMER_SALE_DATE)
             from sa_transactions 
             where CUSTOMER_SALE_DATE between to_date ('01.04.20' ,'DD/MM/YY') and to_date ('01.05.20' ,'DD/MM/YY') 
                                 group by cube (CUSTOMER_SALE_DATE)
@@ -46,7 +45,7 @@
             grouping_id (CUSTOMER_SALE_DATE) as Groupin
             from sa_transactions 
             where CUSTOMER_SALE_DATE between to_date ('01.04.20' ,'DD/MM/YY') and to_date ('01.05.20' ,'DD/MM/YY')
-                                group by cube (CUSTOMER_SALE_DATE, product_name, model_name)
+                                group by cube ( product_name, CUSTOMER_SALE_DATE, model_name)
                                 order by count (rownum);                          
                 
                 
