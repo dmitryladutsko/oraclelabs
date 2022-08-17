@@ -25,16 +25,15 @@
    COLOR_NAME           VARCHAR2(25),
    PRICE                NUMBER(10),
    INSERT_DT            DATE,
-   UPDATE_DT            DATE              
-    );
+   UPDATE_DT            DATE
+   );
                  
      alter session set current_schema=SA_CUSTOMERS;
      INSERT INTO SA_TRANSACTIONS 
         SELECT C.*,PM.*, P.*
              FROM SA_CUSTOMERS.SA_CUSTOMERS C 
                 CROSS JOIN SA_PRODUCTS.SA_PRODUCTS P
-                    CROSS JOIN SA_CUSTOMERS.SA_PAYMENT_METHODS PM
-             --       right outer 
+                    CROSS JOIN SA_CUSTOMERS.SA_PAYMENT_METHODS PM 
         WHERE C.CUSTOMER_SALE_DATE > TO_DATE( '01.01.20', 'MM/DD/YY' ) AND C.CUSTOMER_SALE_DATE < TO_DATE( '02.01.22', 'MM/DD/YY' );
 
        -- alter session set current_schema=SA_CUSTOMERS;SELECT * FROM SA_TRANSACTIONS;
