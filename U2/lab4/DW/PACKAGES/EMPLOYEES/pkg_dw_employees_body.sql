@@ -1,4 +1,9 @@
 alter session set current_schema=DW_DATA;
+SELECT * FROM DIM_EMPLOYEES;
+
+alter session set current_schema=DW_CLEANSING;
+SELECT * FROM CL_EMPLOYEES;
+
 GRANT SELECT ON DW_CLEANSING.cl_employees TO DW_DATA;
 
 alter session set current_schema=DW_DATA;
@@ -8,10 +13,10 @@ AS
   PROCEDURE LOAD_DW_EMPLOYEES
    AS
      BEGIN
-     MERGE INTO DW_DATA.dim_employees A
+     MERGE INTO DW_DATA.dim_employees a
      USING ( SELECT employee_id ,first_name_EMPLOYEE , last_name_EMPLOYEE, email_EMPLOYEE, phone_EMPLOYEE,POSITION_NAME_ACTUAL,
                     POSITION_DEGREE, SALES_TYPE , HIRE_DATE , salary, chief_id , position_name_previous, position_change_date
-             FROM DW_CLEANSING.cl_employees) B
+             FROM DW_CLEANSING.cl_employees) b
              ON (a.employee_id = b.employee_id)
              WHEN MATCHED THEN 
                 UPDATE SET a.salary = b.salary

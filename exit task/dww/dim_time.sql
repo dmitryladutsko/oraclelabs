@@ -1,4 +1,6 @@
 alter session set current_schema = DW_DATA;
+SELECT * FROM DIM_TIME;
+
 create table DIM_TIME (
     date_id                       DATE         ,
     beg_of_year                   DATE         ,      

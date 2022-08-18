@@ -1,8 +1,8 @@
-alter session set current_schema=DW_CLEANSING;
+alter session set current_schema=DW_DATA;
 
-CREATE OR REPLACE PACKAGE pkg_cl_products
+CREATE OR REPLACE PACKAGE pkg_dw_products
 AS  
-   PROCEDURE LOAD_CLEAN_PRODUCTS;
-END pkg_cl_products;
+   PROCEDURE LOAD_DW_PRODUCTS;
+END pkg_dw_products;
 
 --drop package pkg_cl_products;

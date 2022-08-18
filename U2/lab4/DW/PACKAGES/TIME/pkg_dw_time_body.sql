@@ -1,12 +1,12 @@
-alter session set current_schema=SA_DATE;
-GRANT SELECT ON SA_DATE.SA_TIME TO DW_CLEANSING; 
-
 alter session set current_schema=DW_CLEANSING;
-CREATE OR REPLACE PACKAGE body pkg_cl_time
+GRANT SELECT ON DW_CLEANSING.CL_TIME TO DW_DATA; 
+
+alter session set current_schema=DW_DATA;
+CREATE OR REPLACE PACKAGE body pkg_dw_time
 AS  
-  PROCEDURE LOAD_CLEAN_TIME
+  PROCEDURE LOAD_DW_TIME
    AS   
-      CURSOR curs_cl_time
+      CURSOR curs_dw_time
       IS
          SELECT DISTINCT
                 date_id               ,
@@ -25,9 +25,9 @@ AS
                 quarter_number        , 
                 n_year                ,  
                 days_in_cal_year     
-           FROM SA_DATE.SA_TIME
+           FROM DW_CLEANSING.CL_TIME
            WHERE
-               date_id               IS NOT NULL
+               date_id                   IS NOT NULL
                AND beg_of_year           IS NOT NULL      
                AND end_of_year           IS NOT NULL    
                AND day_name              IS NOT NULL
@@ -45,9 +45,9 @@ AS
                AND days_in_cal_year      IS NOT NULL;
                 
    BEGIN
-   EXECUTE IMMEDIATE 'TRUNCATE TABLE DW_CLEANSING.cl_time';
-      FOR i IN curs_cl_time LOOP
-         INSERT INTO DW_CLEANSING.cl_time( 
+   EXECUTE IMMEDIATE 'TRUNCATE TABLE DW_DATA.dim_time';
+      FOR i IN curs_dw_time LOOP
+         INSERT INTO DW_DATA.dim_time( 
                 date_id               ,
                 beg_of_year           ,      
                 end_of_year           ,    
@@ -82,21 +82,21 @@ AS
                 I.n_year                ,  
                 I.days_in_cal_year      );
 
-         EXIT WHEN curs_cl_time%NOTFOUND;
+         EXIT WHEN curs_dw_time%NOTFOUND;
       END LOOP;
 
       COMMIT;
-   END LOAD_CLEAN_TIME;
-END pkg_cl_time;
+   END LOAD_DW_TIME;
+END pkg_dw_time;
 
 
-alter session set current_schema=DW_CLEANSING;
-exec pkg_cl_time.LOAD_CLEAN_TIME;
+alter session set current_schema=DW_DATA;
+exec pkg_dw_time.LOAD_DW_TIME;
+
+alter session set current_schema=DW_DATA;
+select COUNT(*) from dim_time;
 
 alter session set current_schema=DW_CLEANSING;
 select COUNT(*) from cl_time;
-
-alter session set current_schema=SA_DATE;
-select COUNT(*) from sa_time;
 
 commit;
