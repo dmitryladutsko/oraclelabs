@@ -24,3 +24,6 @@ ALTER TABLE DIM_CUSTOMERS DROP CONSTRAINT PK_DIM_CUSTOMERS;
 alter session set current_schema = DW_DATA;
 ALTER TABLE DIM_CUSTOMERS
 ENABLE CONSTRAINT pk_dim_customers;
+
+alter session set current_schema = DW_DATA;
+select * from dim_customers;

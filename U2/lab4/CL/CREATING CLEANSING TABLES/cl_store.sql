@@ -7,4 +7,4 @@ CREATE TABLE CL_STORES (
 );
 
 
-select * from cl_stores;
+select * from cl_PRODUCTS;

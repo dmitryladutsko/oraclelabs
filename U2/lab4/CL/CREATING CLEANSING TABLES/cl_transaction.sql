@@ -21,21 +21,21 @@ create table cl_transactions(
    IS_ACTIVE                     VARCHAR2(6),
    CUSTOMER_SALE_DATE            DATE,
 -----------------------------------------------------------
-    PAYMENT_METHOD_NAME    	 VARCHAR2(40) NOT NULL,
-    BANK_NAME	             VARCHAR2(40) NOT NULL,
+    PAYMENT_METHOD_NAME    	 VARCHAR2(40),
+    BANK_NAME	             VARCHAR2(40),
     -----------------------------------------------------------
-    employee_id              NUMBER(5) not null,
-    first_name_EMPLOYEE      VARCHAR2(40) NOT NULL,
-    last_name_EMPLOYEE       VARCHAR2(40) NOT NULL,
-    email_EMPLOYEE           VARCHAR2(40) NOT NULL,
-    phone_EMPLOYEE           VARCHAR2(40) NOT NULL,
-    POSITION_NAME_ACTUAL     VARCHAR2(40) NOT NULL,
-    POSITION_DEGREE          VARCHAR2(40) NOT NULL,
-    SALES_TYPE               VARCHAR2(40) NOT NULL,
-    HIRE_DATE                DATE NOT NULL,
-    salary                   int not null,
-    chief_id                 int not null,
-    position_name_previous   VARCHAR2(40) NOT NULL,
+    employee_id              NUMBER(5),
+    first_name_EMPLOYEE      VARCHAR2(40),
+    last_name_EMPLOYEE       VARCHAR2(40),
+    email_EMPLOYEE           VARCHAR2(40),
+    phone_EMPLOYEE           VARCHAR2(40),
+    POSITION_NAME_ACTUAL     VARCHAR2(40),
+    POSITION_DEGREE          VARCHAR2(40),
+    SALES_TYPE               VARCHAR2(40),
+    HIRE_DATE                DATE,
+    salary                   int,
+    chief_id                 int,
+    position_name_previous   VARCHAR2(40),
     position_change_date     DATE not null,
 -----------------------------------------------------------
     date_id                  DATE         ,
@@ -53,15 +53,19 @@ create table cl_transactions(
     end_of_quarter           VARCHAR2(32) ,
     quarter_number           VARCHAR2(1)  , 
     n_year                   VARCHAR2(4)  ,  
-    days_in_cal_year         NUMBER      
+    days_in_cal_year         NUMBER       ,
+---------------------------------------------------------------------
+    country_city  VARCHAR2(20),
+    address       VARCHAR2(20),
+    phone         NUMBER 
 );
 
 
 alter session set current_schema=DW_CLEANSING;
-INSERT INTO cl_transactions /*+ parallel(DW_CLEANSING.cl_transactions, 4)*/ 
+INSERT INTO cl_transactions /*+ parallel(DW_CLEANSING.cl_transactions, 8)*/ 
 (
  SELECT    
-        p.* , c.* , pm.* , e.* , t.*
+        p.* , c.* , pm.* , e.* , t.*, s.*
 
  FROM
     DW_CLEANSING.cl_products p
@@ -72,6 +76,8 @@ INSERT INTO cl_transactions /*+ parallel(DW_CLEANSING.cl_transactions, 4)*/
         
             CROSS JOIN DW_CLEANSING.CL_EMPLOYEES e
             
+                CROSS JOIN DW_CLEANSING.CL_STORES s
+            
             INNER JOIN DW_CLEANSING.cl_time t ON t.date_id = c.CUSTOMER_SALE_DATE
  
  WHERE c.CUSTOMER_SALE_DATE > TO_DATE( '01.01.20', 'MM/DD/YY' ) 
@@ -81,9 +87,23 @@ INSERT INTO cl_transactions /*+ parallel(DW_CLEANSING.cl_transactions, 4)*/
 
         e.phone_EMPLOYEE LIKE '2%' AND
 
-        e.FIRST_NAME_EMPLOYEE LIKE 'D%'
-                                        ); 
+        e.FIRST_NAME_EMPLOYEE LIKE 'D%' AND
+        
+        E.LAST_NAME_EMPLOYEE NOT LIKE 'P%' AND
+                
+        E.LAST_NAME_EMPLOYEE NOT LIKE 'S%' AND
+                     
+        (s.PHONE > 7000000) AND
+        
+        pm.PAYMENT_METHOD_NAME = 'Card' AND
+        
+        c.FIRST_NAME_CUSTOMER LIKE 'D%'); 
                                         commit;
+
+select count(*) from cl_stores;
+
+alter session set current_schema = SA_DATE;
+select * from sa_stores
 
     alter session set current_schema=DW_CLEANSING;
     select * from cl_transactions;

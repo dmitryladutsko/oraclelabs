@@ -1,6 +1,6 @@
 alter session set current_schema = DW_DATA;
 
-CREATE TABLE DIM_employee (
+CREATE TABLE dim_employees (
   employee_id              NUMBER(5) not null,
     first_name_EMPLOYEE      VARCHAR2(40) NOT NULL,
     last_name_EMPLOYEE       VARCHAR2(40) NOT NULL,
@@ -16,3 +16,5 @@ CREATE TABLE DIM_employee (
     position_change_date     DATE not null
 );
 commit;
+
+select * from dim_employees;

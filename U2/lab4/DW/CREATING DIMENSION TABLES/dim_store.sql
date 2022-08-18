@@ -4,8 +4,8 @@ SELECT * FROM  DIM_STORES;
 
 CREATE TABLE DIM_stores (
     store_id      INT,
-    country_city  VARCHAR2(20) NOT NULL,
-    address       VARCHAR2(20) NOT NULL,
-    phone         NUMBER NOT NULL,
+    country_city  VARCHAR2(20),
+    address       VARCHAR2(20),
+    phone         NUMBER,
     CONSTRAINT store_id_pk PRIMARY KEY ( store_id )
 );
