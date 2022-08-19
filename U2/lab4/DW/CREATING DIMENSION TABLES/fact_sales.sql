@@ -5,13 +5,12 @@ drop table fact_sales;
 alter session set current_schema = DW_DATA;
 create table FACT_SALES (
 SALE_ID             NUMBER(22,0),
+DATE_ID              DATE        ,
 CUSTOMER_ID          NUMBER(22,0),
 PRODUCT_ID           NUMBER(22,0),
 PAYMENT_METHOD_ID    NUMBER(10,0),
 STORE_ID             NUMBER(10,0),
-EMPLOYEE_ID          NUMBER(10,0),
-DATE_ID              DATE        ,
-UPDATE_DT            DATE        ,
+EMPLOYEE_ID          NUMBER(10,0)
    /*PERIOD_ID            NUMBER(22,0),
    GEO_ID               NUMBER(22),*/
 

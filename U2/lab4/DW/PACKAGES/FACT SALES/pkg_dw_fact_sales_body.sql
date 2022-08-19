@@ -25,8 +25,8 @@ AS
               EMPLOYEE_ID CURSOR_NUMBER;
 
         BEGIN
-            OPEN ALL_INF FOR SELECT
-            /*+parallel (8) */
+            OPEN ALL_INF FOR SELECT /*+parallel (8) */
+                             fac.sale_id,
                              t.date_id,
                              c.customer_id,
                              p.product_id,
@@ -38,7 +38,7 @@ AS
                            FROM DW_CLEANSING.cl_transactions) source_cl
                      LEFT JOIN 
                         DW_DATA.dim_time t
-                     ON (source_cl.date_id=t.date_id)
+                     ON (source_cl.customer_sale_date=t.date_id)
                      LEFT JOIN 
                         DW_DATA.dim_customers c
                      ON (source_cl.phone_customer=c.phone_customer and source_cl.email = c.email)
@@ -47,21 +47,23 @@ AS
                      ON (source_cl.product_name=p.product_name and source_cl.model_name=p.model_name)
                      LEFT JOIN 
                         DW_DATA.dim_payment_methods pm
-                     ON (source_cl.payment_method_name=pm.bank_name)
+                     ON (source_cl.payment_method_name=pm.payment_method_name AND source_cl.bank_name=pm.bank_name)
                      LEFT JOIN 
                         DW_DATA.dim_stores s
                      ON (source_cl.phone=s.phone)
                      LEFT JOIN 
                         DW_DATA.dim_employees emp
-                     ON (source_cl.employee_id=emp.employee_id)
+                     ON (source_cl.phone_employee=emp.phone_employee)
                      LEFT JOIN 
                         DW_DATA.fact_sales fac
                      ON (t.date_id=fac.date_id AND c.customer_id=fac.customer_id AND p.product_id=fac.product_id 
                      AND pm.payment_method_id=fac.payment_method_id AND s.store_id=fac.store_id 
-                     AND emp.employee_id=fac.employee_id);
+                     AND emp.employee_id=fac.employee_id)
+                     where rownum <= 300000;
 	
 	   FETCH ALL_INF
 	   BULK COLLECT INTO
+              SALE_ID                  ,
               DATE_ID                  ,
               CUSTOMER_ID              ,
               PRODUCT_ID               ,
@@ -106,6 +108,6 @@ CREATE SEQUENCE SEQ_FACT_SALES
 
 alter session set current_schema=DW_DATA;
 exec pkg_dw_fact_sales.LOAD_DW_FACT_SALES;
-select * from FACT_SALES;
+select * from FACT_SALES order by 1;
 
 commit;

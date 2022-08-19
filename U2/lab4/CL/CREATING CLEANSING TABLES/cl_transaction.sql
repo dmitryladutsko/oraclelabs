@@ -97,16 +97,11 @@ INSERT INTO cl_transactions /*+ parallel(DW_CLEANSING.cl_transactions, 8)*/
         
         pm.PAYMENT_METHOD_NAME = 'Card' AND
         
-        c.FIRST_NAME_CUSTOMER LIKE 'D%'); 
+        c.FIRST_NAME_CUSTOMER LIKE 'D%') ;
                                         commit;
 
-select count(*) from cl_stores;
-
-alter session set current_schema = SA_DATE;
-select * from sa_stores
-
     alter session set current_schema=DW_CLEANSING;
-    select * from cl_transactions;
+    select COUNT(*) from cl_transactions;
     
     SELECT 
         * 
