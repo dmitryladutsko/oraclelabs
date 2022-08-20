@@ -35,20 +35,6 @@ default tablespace ts_sa_customers_data_001;
 
 grant connect, resource to SA_CUSTOMERS;
 
-   /* create tablespace ts_sa_borrowers_data_001
-datafile '/oracle/u02/oradata/DLadutkodb/ts_sa_borrowers_data_001.dat'
-size 150M
-    autoextend on next 50M
-logging
-segment space management auto
-extent management local;
-
-create user SA_BORROWERS
-identified by "%PWD%"
-default tablespace ts_sa_borrowers_data_001;
-
-grant connect, resource to SA_BORROWERS;*/
-
 create tablespace ts_sa_products_data_001
 datafile '/oracle/u02/oradata/DLadutkodb/ts_sa_products_data_001.dat'
 size 150M
@@ -178,22 +164,6 @@ identified by "%PWD%"
 default tablespace ts_sa_dim_products_01;
 
 grant connect, resource, create view to DM_PRODUCTS;
-
---dim_borrowers
-
-create tablespace ts_sa_dim_borrowers_01
-datafile '/oracle/u02/oradata/DLadutkodb/ts_sa_dim_borrowers.dat'
-size 150M
-    autoextend on next 50M
-logging
-segment space management auto
-extent management local;
-
-create user DM_BORROWERS
-identified by "%PWD%"
-default tablespace ts_sa_dim_borrowers_01;
-
-grant connect, resource, create view to DM_BORROWERS;
 
 -- dim geo_locations...
 --???????

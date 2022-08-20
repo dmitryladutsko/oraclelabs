@@ -1,7 +1,8 @@
-alter session set current_schema = DW_DATA;
-SELECT * FROM DIM_TIME;
 
-create table DIM_TIME (
+
+alter session set current_schema = SAL_CL;
+
+create table SAL_DIM_TIME (
     date_id                       DATE         ,
     beg_of_year                   DATE         ,      
     end_of_year                   DATE         ,    
@@ -20,6 +21,3 @@ create table DIM_TIME (
     days_in_cal_year              NUMBER       ,
    constraint PK_DIM_TIME primary key (date_id)
 );
-CREATE INDEX idx_dim_time ON dim_time(date_id DESC);
-
-DROP INDEX idx_dim_time;
