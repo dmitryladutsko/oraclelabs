@@ -73,3 +73,30 @@ alter table FACT_SALES
 alter table FACT_SALES
    add constraint FK_FACT_SALE_REFERENCE_DIM_EMP foreign key (EMPLOYEE_ID)
       references DIM_EMPLOYEES (EMPLOYEE_ID);
+      
+      
+      
+      
+--------------------- CREATED TABLES
+
+    SELECT
+  table_name, owner
+    FROM
+  all_tables
+    WHERE
+  owner='DW_DATA'
+    ORDER BY
+  owner, table_name
+
+
+alter session set current_schema = DW_DATA;
+
+SELECT * FROM DIM_CUSTOMERS   ;
+SELECT * FROM DIM_EMPLOYEES   ;
+SELECT * FROM DIM_GEN_PERIODS ;
+SELECT * FROM DIM_GEO_LOCATIONS;
+SELECT * FROM DIM_PAYMENT_METHODS;
+SELECT * FROM DIM_PRODUCTS       ;
+SELECT * FROM DIM_STORES         ;
+SELECT * FROM DIM_TIME           ;
+SELECT * FROM FACT_SALES  ; 

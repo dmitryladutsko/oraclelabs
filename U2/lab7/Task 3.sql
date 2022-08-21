@@ -40,3 +40,4 @@ commit;
 UPDATE DW_CLEANSING.CL_TRANSACTIONS
 SET price = price - 500
 WHERE PRODUCT_NAME = 'AirPods';
+

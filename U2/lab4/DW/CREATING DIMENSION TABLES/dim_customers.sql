@@ -11,7 +11,7 @@ create table DIM_CUSTOMERS (
    PHONE                CHAR(20),
    AGE                  NUMBER(3,1),
    VALID_FROM           DATE,
-   VALID_TO             DATE                  not null,
+   VALID_TO             DATE,
    IS_ACTIVE            VARCHAR2(4),
    INSERT_DT            DATE,
    CONSTRAINT PK_DIM_CUSTOMERS PRIMARY KEY ( CUSTOMER_ID )

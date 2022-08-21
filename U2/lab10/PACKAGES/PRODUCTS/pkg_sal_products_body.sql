@@ -56,7 +56,7 @@ alter session set current_schema=sal_cl;
 exec pkg_sal_products.LOAD_SAL_PRODUCTS;
 
 alter session set current_schema=sal_cl;
-select count(*) from sal_dim_products;
+select * from sal_dim_products;
 
 alter session set current_schema=DW_DATA;
 select count(*) from dim_products;
