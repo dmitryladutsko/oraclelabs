@@ -11,9 +11,6 @@ PRODUCT_ID           NUMBER(22,0),
 PAYMENT_METHOD_ID    NUMBER(10,0),
 STORE_ID             NUMBER(10,0),
 EMPLOYEE_ID          NUMBER(10,0),
-   /*PERIOD_ID            NUMBER(22,0),
-   GEO_ID               NUMBER(22),*/
-
    constraint PK_FACT_SALES primary key (SALE_ID)
 )
 --drop table FACT_SALES;

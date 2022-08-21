@@ -22,6 +22,6 @@ as
                         )
     ORDER BY product_name, model_name, month;
     
-    select *
+    select count(*)
     from
     DW_CLEANSING.CL_TRANSACTIONS 
