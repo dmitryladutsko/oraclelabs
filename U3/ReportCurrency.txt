@@ -1,0 +1,25 @@
+The execution was successful
+
+- Initializing Data Flow Task (Success)
+
+- Initializing Connections (Success)
+
+- Setting SQL Command (Success)
+
+- Setting Source Connection (Success)
+
+- Setting Destination Connection (Success)
+
+- Validating (Success)
+
+- Saving (Success)
+	Messages
+	* Information 0x4001f44e: Data Flow Task 1: Attempting to downgrade "Source - Query". The package is attempting to downgrade an extensible object.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4001f44e: Data Flow Task 1: Attempting to downgrade "Destination - Currency_txt". The package is attempting to downgrade an extensible object.
+	 (SQL Server Import and Export Wizard)
+	
+
+
+

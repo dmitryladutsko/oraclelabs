@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LAPTOP-QH8GM32C"
+  DTS:DTSID="{A95C3D0D-563A-4FD7-8ED5-D7AA95F59B64}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=LAPTOP-QH8GM32C;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Integration Services Project1-{A95C3D0D-563A-4FD7-8ED5-D7AA95F59B64}LAPTOP-QH8GM32C;Initial File Name=C:\Users\Dmitry\AppData\Roaming\SQL Developer\myworks\oraclelabs\U3\AdventureWorksDW2019.bak;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
