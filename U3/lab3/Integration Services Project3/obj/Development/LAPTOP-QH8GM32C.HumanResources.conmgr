@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LAPTOP-QH8GM32C.HumanResources"
+  DTS:DTSID="{F228FADF-D596-4FBA-98B4-686FB8063F69}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=LAPTOP-QH8GM32C;Initial Catalog=HumanResources;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Integration Services Project3-{F228FADF-D596-4FBA-98B4-686FB8063F69}LAPTOP-QH8GM32C.HumanResources;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

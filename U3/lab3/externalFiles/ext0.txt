@@ -1,0 +1,281 @@
+EmployeeID,FirstName,LastName,JobTitle,EmailAddress,City,StateProvinceName,CountryRegionName
+1,Ken,Sánchez,Chief Executive Officer,ken0@adventure-works.com,Newport Hills,Washington,United States
+2,Terri,Duffy,Vice President of Engineering,terri0@adventure-works.com,Renton,Washington,United States
+3,Roberto,Tamburello,Engineering Manager,roberto0@adventure-works.com,Redmond,Washington,United States
+4,Rob,Walters,Senior Tool Designer,rob0@adventure-works.com,Minneapolis,Minnesota,United States
+5,Gail,Erickson,Design Engineer,gail0@adventure-works.com,Bellevue,Washington,United States
+6,Jossef,Goldberg,Design Engineer,jossef0@adventure-works.com,Renton,Washington,United States
+7,Dylan,Miller,Research and Development Manager,dylan0@adventure-works.com,Kenmore,Washington,United States
+8,Diane,Margheim,Research and Development Engineer,diane1@adventure-works.com,Everett,Washington,United States
+9,Gigi,Matthew,Research and Development Engineer,gigi0@adventure-works.com,Bellevue,Washington,United States
+10,Michael,Raheem,Research and Development Manager,michael6@adventure-works.com,San Francisco,California,United States
+11,Ovidiu,Cracium,Senior Tool Designer,ovidiu0@adventure-works.com,Kenmore,Washington,United States
+12,Thierry,D'Hers,Tool Designer,thierry0@adventure-works.com,Bothell,Washington,United States
+13,Janice,Galvin,Tool Designer,janice0@adventure-works.com,Redmond,Washington,United States
+14,Michael,Sullivan,Senior Design Engineer,michael8@adventure-works.com,Renton,Washington,United States
+15,Sharon,Salavaria,Design Engineer,sharon0@adventure-works.com,Renton,Washington,United States
+16,David,Bradley,Marketing Manager,david0@adventure-works.com,Redmond,Washington,United States
+17,Kevin,Brown,Marketing Assistant,kevin0@adventure-works.com,Everett,Washington,United States
+18,John,Wood,Marketing Specialist,john5@adventure-works.com,Redmond,Washington,United States
+19,Mary,Dempsey,Marketing Assistant,mary2@adventure-works.com,Bellevue,Washington,United States
+20,Wanida,Benshoof,Marketing Assistant,wanida0@adventure-works.com,Sammamish,Washington,United States
+21,Terry,Eminhizer,Marketing Specialist,terry0@adventure-works.com,Bellevue,Washington,United States
+22,Sariya,Harnpadoungsataya,Marketing Specialist,sariya0@adventure-works.com,Everett,Washington,United States
+23,Mary,Gibson,Marketing Specialist,mary0@adventure-works.com,Everett,Washington,United States
+24,Jill,Williams,Marketing Specialist,jill0@adventure-works.com,Everett,Washington,United States
+25,James,Hamilton,Vice President of Production,james1@adventure-works.com,Monroe,Washington,United States
+26,Peter,Krebs,Production Control Manager,peter0@adventure-works.com,Bellevue,Washington,United States
+27,Jo,Brown,Production Supervisor - WC60,jo0@adventure-works.com,Duvall,Washington,United States
+28,Guy,Gilbert,Production Technician - WC60,guy1@adventure-works.com,Monroe,Washington,United States
+29,Mark,McArthur,Production Technician - WC60,mark1@adventure-works.com,Redmond,Washington,United States
+30,Britta,Simon,Production Technician - WC60,britta0@adventure-works.com,Edmonds,Washington,United States
+31,Margie,Shoop,Production Technician - WC60,margie0@adventure-works.com,Edmonds,Washington,United States
+32,Rebecca,Laszlo,Production Technician - WC60,rebecca0@adventure-works.com,Bellevue,Washington,United States
+33,Annik,Stahl,Production Technician - WC60,annik0@adventure-works.com,Seattle,Washington,United States
+34,Suchitra,Mohan,Production Technician - WC60,suchitra0@adventure-works.com,Bellevue,Washington,United States
+35,Brandon,Heidepriem,Production Technician - WC60,brandon0@adventure-works.com,Redmond,Washington,United States
+36,Jose,Lugo,Production Technician - WC60,jose0@adventure-works.com,Seattle,Washington,United States
+37,Chris,Okelberry,Production Technician - WC60,chris2@adventure-works.com,Redmond,Washington,United States
+38,Kim,Abercrombie,Production Technician - WC60,kim1@adventure-works.com,Carnation,Washington,United States
+39,Ed,Dudenhoefer,Production Technician - WC60,ed0@adventure-works.com,Seattle,Washington,United States
+40,JoLynn,Dobney,Production Supervisor - WC60,jolynn0@adventure-works.com,Seattle,Washington,United States
+41,Bryan,Baker,Production Technician - WC60,bryan0@adventure-works.com,Monroe,Washington,United States
+42,James,Kramer,Production Technician - WC60,james0@adventure-works.com,Monroe,Washington,United States
+43,Nancy,Anderson,Production Technician - WC60,nancy0@adventure-works.com,Sammamish,Washington,United States
+44,Simon,Rapier,Production Technician - WC60,simon0@adventure-works.com,Duvall,Washington,United States
+45,Thomas,Michaels,Production Technician - WC60,thomas0@adventure-works.com,Edmonds,Washington,United States
+46,Eugene,Kogan,Production Technician - WC60,eugene1@adventure-works.com,Duvall,Washington,United States
+47,Andrew,Hill,Production Supervisor - WC10,andrew0@adventure-works.com,Everett,Washington,United States
+48,Ruth,Ellerbrock,Production Technician - WC10,ruth0@adventure-works.com,Everett,Washington,United States
+49,Barry,Johnson,Production Technician - WC10,barry0@adventure-works.com,Snohomish,Washington,United States
+50,Sidney,Higa,Production Technician - WC10,sidney0@adventure-works.com,Edmonds,Washington,United States
+51,Jeffrey,Ford,Production Technician - WC10,jeffrey0@adventure-works.com,Monroe,Washington,United States
+52,Doris,Hartwig,Production Technician - WC10,doris0@adventure-works.com,Kenmore,Washington,United States
+53,Diane,Glimp,Production Technician - WC10,diane0@adventure-works.com,Redmond,Washington,United States
+54,Bonnie,Kearney,Production Technician - WC10,bonnie0@adventure-works.com,Snohomish,Washington,United States
+55,Taylor,Maxwell,Production Supervisor - WC50,taylor0@adventure-works.com,Edmonds,Washington,United States
+56,Denise,Smith,Production Technician - WC50,denise0@adventure-works.com,Kenmore,Washington,United States
+57,Frank,Miller,Production Technician - WC50,frank1@adventure-works.com,Snohomish,Washington,United States
+58,Kendall,Keil,Production Technician - WC50,kendall0@adventure-works.com,Seattle,Washington,United States
+59,Bob,Hohman,Production Technician - WC50,bob0@adventure-works.com,Bothell,Washington,United States
+60,Pete,Male,Production Technician - WC50,pete0@adventure-works.com,Seattle,Washington,United States
+61,Diane,Tibbott,Production Technician - WC50,diane2@adventure-works.com,Kenmore,Washington,United States
+62,John,Campbell,Production Supervisor - WC60,john0@adventure-works.com,Seattle,Washington,United States
+63,Maciej,Dusza,Production Technician - WC60,maciej0@adventure-works.com,Edmonds,Washington,United States
+64,Michael,Zwilling,Production Technician - WC60,michael7@adventure-works.com,Edmonds,Washington,United States
+65,Randy,Reeves,Production Technician - WC60,randy0@adventure-works.com,Edmonds,Washington,United States
+66,Karan,Khanna,Production Technician - WC60,karan0@adventure-works.com,Seattle,Washington,United States
+67,Jay,Adams,Production Technician - WC60,jay0@adventure-works.com,Monroe,Washington,United States
+68,Charles,Fitzgerald,Production Technician - WC60,charles0@adventure-works.com,Sammamish,Washington,United States
+69,Steve,Masters,Production Technician - WC60,steve0@adventure-works.com,Seattle,Washington,United States
+70,David,Ortiz,Production Technician - WC60,david2@adventure-works.com,Seattle,Washington,United States
+71,Michael,Ray,Production Supervisor - WC30,michael3@adventure-works.com,Seattle,Washington,United States
+72,Steven,Selikoff,Production Technician - WC30,steven0@adventure-works.com,Everett,Washington,United States
+73,Carole,Poland,Production Technician - WC30,carole0@adventure-works.com,Edmonds,Washington,United States
+74,Bjorn,Rettig,Production Technician - WC30,bjorn0@adventure-works.com,Seattle,Washington,United States
+75,Michiko,Osada,Production Technician - WC30,michiko0@adventure-works.com,Sammamish,Washington,United States
+76,Carol,Philips,Production Technician - WC30,carol0@adventure-works.com,Bothell,Washington,United States
+77,Merav,Netz,Production Technician - WC30,merav0@adventure-works.com,Seattle,Washington,United States
+78,Reuben,D'sa,Production Supervisor - WC40,reuben0@adventure-works.com,Seattle,Washington,United States
+79,Eric,Brown,Production Technician - WC40,eric1@adventure-works.com,Duvall,Washington,United States
+80,Sandeep,Kaliyath,Production Technician - WC40,sandeep0@adventure-works.com,Sammamish,Washington,United States
+81,Mihail,Frintu,Production Technician - WC40,mihail0@adventure-works.com,Edmonds,Washington,United States
+82,Jack,Creasey,Production Technician - WC40,jack1@adventure-works.com,Seattle,Washington,United States
+83,Patrick,Cook,Production Technician - WC40,patrick1@adventure-works.com,Seattle,Washington,United States
+84,Frank,Martinez,Production Technician - WC40,frank3@adventure-works.com,Snohomish,Washington,United States
+85,Brian,Goldstein,Production Technician - WC40,brian2@adventure-works.com,Bothell,Washington,United States
+86,Ryan,Cornelsen,Production Technician - WC40,ryan0@adventure-works.com,Sammamish,Washington,United States
+87,Cristian,Petculescu,Production Supervisor - WC10,cristian0@adventure-works.com,Seattle,Washington,United States
+88,Betsy,Stadick,Production Technician - WC10,betsy0@adventure-works.com,Bothell,Washington,United States
+89,Patrick,Wedge,Production Technician - WC10,patrick0@adventure-works.com,Bellevue,Washington,United States
+90,Danielle,Tiedt,Production Technician - WC10,danielle0@adventure-works.com,Kenmore,Washington,United States
+91,Kimberly,Zimmerman,Production Technician - WC10,kimberly0@adventure-works.com,Seattle,Washington,United States
+92,Tom,Vande Velde,Production Technician - WC10,tom0@adventure-works.com,Everett,Washington,United States
+93,Kok-Ho,Loh,Production Supervisor - WC50,kok-ho0@adventure-works.com,Bellevue,Washington,United States
+94,Russell,Hunter,Production Technician - WC50,russell0@adventure-works.com,Seattle,Washington,United States
+95,Jim,Scardelis,Production Technician - WC50,jim0@adventure-works.com,Edmonds,Washington,United States
+96,Elizabeth,Keyser,Production Technician - WC50,elizabeth0@adventure-works.com,Kent,Washington,United States
+97,Mandar,Samant,Production Technician - WC50,mandar0@adventure-works.com,Duvall,Washington,United States
+98,Sameer,Tejani,Production Technician - WC50,sameer0@adventure-works.com,Duvall,Washington,United States
+99,Nuan,Yu,Production Technician - WC50,nuan0@adventure-works.com,Bellevue,Washington,United States
+100,Lolan,Song,Production Technician - WC50,lolan0@adventure-works.com,Edmonds,Washington,United States
+101,Houman,Pournasseh,Production Technician - WC50,houman0@adventure-works.com,Redmond,Washington,United States
+102,Zheng,Mu,Production Supervisor - WC10,zheng0@adventure-works.com,Seattle,Washington,United States
+103,Ebru,Ersan,Production Technician - WC10,ebru0@adventure-works.com,Sammamish,Washington,United States
+104,Mary,Baker,Production Technician - WC10,mary1@adventure-works.com,Seattle,Washington,United States
+105,Kevin,Homer,Production Technician - WC10,kevin2@adventure-works.com,Bellevue,Washington,United States
+106,John,Kane,Production Technician - WC10,john4@adventure-works.com,Duvall,Washington,United States
+107,Christopher,Hill,Production Technician - WC10,christopher0@adventure-works.com,Bothell,Washington,United States
+108,Jinghao,Liu,Production Supervisor - WC50,jinghao0@adventure-works.com,Carnation,Washington,United States
+109,Alice,Ciccu,Production Technician - WC50,alice0@adventure-works.com,Snohomish,Washington,United States
+110,Jun,Cao,Production Technician - WC50,jun0@adventure-works.com,Redmond,Washington,United States
+111,Suroor,Fatima,Production Technician - WC50,suroor0@adventure-works.com,Edmonds,Washington,United States
+112,John,Evans,Production Technician - WC50,john1@adventure-works.com,Seattle,Washington,United States
+113,Linda,Moschell,Production Technician - WC50,linda0@adventure-works.com,Bellevue,Washington,United States
+114,Mindaugas,Krapauskas,Production Technician - WC50,mindaugas0@adventure-works.com,Edmonds,Washington,United States
+115,Angela,Barbariol,Production Technician - WC50,angela0@adventure-works.com,Edmonds,Washington,United States
+116,Michael,Patten,Production Technician - WC50,michael2@adventure-works.com,Edmonds,Washington,United States
+117,Chad,Niswonger,Production Technician - WC50,chad0@adventure-works.com,Bothell,Washington,United States
+118,Don,Hall,Production Technician - WC50,don0@adventure-works.com,Carnation,Washington,United States
+119,Michael,Entin,Production Technician - WC50,michael4@adventure-works.com,Redmond,Washington,United States
+120,Kitti,Lertpiriyasuwat,Production Technician - WC50,kitti0@adventure-works.com,Seattle,Washington,United States
+121,Pilar,Ackerman,Shipping and Receiving Supervisor,pilar0@adventure-works.com,Seattle,Washington,United States
+122,Susan,Eaton,Stocker,susan0@adventure-works.com,Renton,Washington,United States
+123,Vamsi,Kuppa,Shipping and Receiving Clerk,vamsi0@adventure-works.com,Bothell,Washington,United States
+124,Kim,Ralls,Stocker,kim0@adventure-works.com,Bothell,Washington,United States
+125,Matthias,Berndt,Shipping and Receiving Clerk,matthias0@adventure-works.com,Renton,Washington,United States
+126,Jimmy,Bischoff,Stocker,jimmy0@adventure-works.com,Renton,Washington,United States
+127,David,Hamilton,Production Supervisor - WC40,david4@adventure-works.com,Kenmore,Washington,United States
+128,Paul,Komosinski,Production Technician - WC40,paul0@adventure-works.com,Bellevue,Washington,United States
+129,Gary,Yukish,Production Technician - WC40,gary0@adventure-works.com,Edmonds,Washington,United States
+130,Rob,Caron,Production Technician - WC40,rob1@adventure-works.com,Monroe,Washington,United States
+131,Baris,Cetinok,Production Technician - WC40,baris0@adventure-works.com,Seattle,Washington,United States
+132,Nicole,Holliday,Production Technician - WC40,nicole0@adventure-works.com,Seattle,Washington,United States
+133,Michael,Rothkugel,Production Technician - WC40,michael1@adventure-works.com,Edmonds,Washington,United States
+134,Eric,Gubbels,Production Supervisor - WC20,eric0@adventure-works.com,Edmonds,Washington,United States
+135,Ivo,Salmre,Production Technician - WC20,ivo0@adventure-works.com,Monroe,Washington,United States
+136,Sylvester,Valdez,Production Technician - WC20,sylvester0@adventure-works.com,Bellevue,Washington,United States
+137,Anibal,Sousa,Production Technician - WC20,anibal0@adventure-works.com,Redmond,Washington,United States
+138,Samantha,Smith,Production Technician - WC20,samantha0@adventure-works.com,Bellevue,Washington,United States
+139,Hung-Fu,Ting,Production Technician - WC20,hung-fu0@adventure-works.com,Sammamish,Washington,United States
+140,Prasanna,Samarawickrama,Production Technician - WC20,prasanna0@adventure-works.com,Redmond,Washington,United States
+141,Min,Su,Production Technician - WC20,min0@adventure-works.com,Bellevue,Washington,United States
+142,Olinda,Turner,Production Technician - WC20,olinda0@adventure-works.com,Bellevue,Washington,United States
+143,Krishna,Sunkammurali,Production Technician - WC20,krishna0@adventure-works.com,Edmonds,Washington,United States
+144,Paul,Singh,Production Technician - WC20,paul1@adventure-works.com,Bellevue,Washington,United States
+145,Cynthia,Randall,Production Supervisor - WC30,cynthia0@adventure-works.com,Kenmore,Washington,United States
+146,Jian Shuo,Wang,Production Technician - WC30,jianshuo0@adventure-works.com,Monroe,Washington,United States
+147,Sandra,Reátegui Alayo,Production Technician - WC30,sandra0@adventure-works.com,Seattle,Washington,United States
+148,Jason,Watters,Production Technician - WC30,jason0@adventure-works.com,Bellevue,Washington,United States
+149,Andy,Ruth,Production Technician - WC30,andy0@adventure-works.com,Bellevue,Washington,United States
+150,Michael,Vanderhyde,Production Technician - WC30,michael5@adventure-works.com,Edmonds,Washington,United States
+151,Rostislav,Shabalin,Production Technician - WC30,rostislav0@adventure-works.com,Bellevue,Washington,United States
+152,Yuhong,Li,Production Supervisor - WC20,yuhong0@adventure-works.com,Seattle,Washington,United States
+153,Hanying,Feng,Production Technician - WC20,hanying0@adventure-works.com,Redmond,Washington,United States
+154,Raymond,Sam,Production Technician - WC20,raymond0@adventure-works.com,Edmonds,Washington,United States
+155,Fadi,Fakhouri,Production Technician - WC20,fadi0@adventure-works.com,Snohomish,Washington,United States
+156,Lane,Sacksteder,Production Technician - WC20,lane0@adventure-works.com,Seattle,Washington,United States
+157,Linda,Randall,Production Technician - WC20,linda1@adventure-works.com,Seattle,Washington,United States
+158,Shelley,Dyck,Production Technician - WC20,shelley0@adventure-works.com,Monroe,Washington,United States
+159,Terrence,Earls,Production Technician - WC20,terrence0@adventure-works.com,Bellevue,Washington,United States
+160,Jeff,Hay,Production Supervisor - WC45,jeff0@adventure-works.com,Everett,Washington,United States
+161,Kirk,Koenigsbauer,Production Technician - WC45,kirk0@adventure-works.com,Seattle,Washington,United States
+162,Laura,Steele,Production Technician - WC45,laura0@adventure-works.com,Duvall,Washington,United States
+163,Alex,Nayberg,Production Technician - WC45,alex0@adventure-works.com,Newport Hills,Washington,United States
+164,Andrew,Cencini,Production Technician - WC45,andrew1@adventure-works.com,Sammamish,Washington,United States
+165,Chris,Preston,Production Technician - WC45,chris0@adventure-works.com,Seattle,Washington,United States
+166,Jack,Richins,Production Supervisor - WC30,jack0@adventure-works.com,Monroe,Washington,United States
+167,David,Johnson,Production Technician - WC30,david1@adventure-works.com,Kenmore,Washington,United States
+168,Garrett,Young,Production Technician - WC30,garrett0@adventure-works.com,Snohomish,Washington,United States
+169,Susan,Metters,Production Technician - WC30,susan1@adventure-works.com,Sammamish,Washington,United States
+170,George,Li,Production Technician - WC30,george0@adventure-works.com,Carnation,Washington,United States
+171,David,Yalovsky,Production Technician - WC30,david3@adventure-works.com,Seattle,Washington,United States
+172,Marc,Ingle,Production Technician - WC30,marc0@adventure-works.com,Sammamish,Washington,United States
+173,Eugene,Zabokritski,Production Technician - WC30,eugene0@adventure-works.com,Sammamish,Washington,United States
+174,Benjamin,Martin,Production Technician - WC30,benjamin0@adventure-works.com,Snohomish,Washington,United States
+175,Reed,Koch,Production Technician - WC30,reed0@adventure-works.com,Redmond,Washington,United States
+176,David,Lawrence,Production Technician - WC30,david7@adventure-works.com,Monroe,Washington,United States
+177,Russell,King,Production Technician - WC30,russell1@adventure-works.com,Bellevue,Washington,United States
+178,John,Frum,Production Technician - WC30,john3@adventure-works.com,Everett,Washington,United States
+179,Jan,Miksovsky,Production Technician - WC30,jan0@adventure-works.com,Everett,Washington,United States
+180,Katie,McAskill-White,Production Supervisor - WC20,katie0@adventure-works.com,Seattle,Washington,United States
+181,Michael,Hines,Production Technician - WC20,michael0@adventure-works.com,Monroe,Washington,United States
+182,Nitin,Mirchandani,Production Technician - WC20,nitin0@adventure-works.com,Sammamish,Washington,United States
+183,Barbara,Decker,Production Technician - WC20,barbara0@adventure-works.com,Sammamish,Washington,United States
+184,John,Chen,Production Technician - WC20,john2@adventure-works.com,Duvall,Washington,United States
+185,Stefen,Hesse,Production Technician - WC20,stefen0@adventure-works.com,Duvall,Washington,United States
+186,Shane,Kim,Production Supervisor - WC45,shane0@adventure-works.com,Bellevue,Washington,United States
+187,Yvonne,McKay,Production Technician - WC45,yvonne0@adventure-works.com,Everett,Washington,United States
+188,Douglas,Hite,Production Technician - WC45,douglas0@adventure-works.com,Carnation,Washington,United States
+189,Janeth,Esteves,Production Technician - WC45,janeth0@adventure-works.com,Monroe,Washington,United States
+190,Robert,Rounthwaite,Production Technician - WC45,robert0@adventure-works.com,Seattle,Washington,United States
+191,Lionel,Penuchot,Production Technician - WC45,lionel0@adventure-works.com,Seattle,Washington,United States
+192,Brenda,Diaz,Production Supervisor - WC40,brenda0@adventure-works.com,Seattle,Washington,United States
+193,Alejandro,McGuel,Production Technician - WC40,alejandro0@adventure-works.com,Seattle,Washington,United States
+194,Fred,Northup,Production Technician - WC40,fred0@adventure-works.com,Snohomish,Washington,United States
+195,Kevin,Liu,Production Technician - WC40,kevin1@adventure-works.com,Seattle,Washington,United States
+196,Shammi,Mohamed,Production Technician - WC40,shammi0@adventure-works.com,Bellevue,Washington,United States
+197,Rajesh,Patel,Production Technician - WC40,rajesh0@adventure-works.com,Edmonds,Washington,United States
+198,Lorraine,Nay,Production Technician - WC40,lorraine0@adventure-works.com,Edmonds,Washington,United States
+199,Paula,Nartker,Production Technician - WC40,paula1@adventure-works.com,Seattle,Washington,United States
+200,Frank,Lee,Production Technician - WC40,frank0@adventure-works.com,Seattle,Washington,United States
+201,Brian,Lloyd,Production Technician - WC40,brian0@adventure-works.com,Snohomish,Washington,United States
+202,Tawana,Nusbaum,Production Technician - WC40,tawana0@adventure-works.com,Seattle,Washington,United States
+203,Ken,Myer,Production Technician - WC40,ken1@adventure-works.com,Everett,Washington,United States
+204,Gabe,Mares,Production Technician - WC40,gabe0@adventure-works.com,Edmonds,Washington,United States
+205,Lori,Kane,Production Supervisor - WC45,lori0@adventure-works.com,Redmond,Washington,United States
+206,Stuart,Munson,Production Technician - WC45,stuart0@adventure-works.com,Bellevue,Washington,United States
+207,Greg,Alderson,Production Technician - WC45,greg0@adventure-works.com,Bellevue,Washington,United States
+208,Scott,Gode,Production Technician - WC45,scott0@adventure-works.com,Seattle,Washington,United States
+209,Kathie,Flood,Production Technician - WC45,kathie0@adventure-works.com,Everett,Washington,United States
+210,Belinda,Newman,Production Technician - WC45,belinda0@adventure-works.com,Bothell,Washington,United States
+211,Hazem,Abolrous,Quality Assurance Manager,hazem0@adventure-works.com,Kenmore,Washington,United States
+212,Peng,Wu,Quality Assurance Supervisor,peng0@adventure-works.com,Bothell,Washington,United States
+213,Sootha,Charncherngkha,Quality Assurance Technician,sootha0@adventure-works.com,Kenmore,Washington,United States
+214,Andreas,Berglund,Quality Assurance Technician,andreas0@adventure-works.com,Renton,Washington,United States
+215,Mark,Harrington,Quality Assurance Technician,mark0@adventure-works.com,Issaquah,Washington,United States
+216,Sean,Alexander,Quality Assurance Technician,sean0@adventure-works.com,Renton,Washington,United States
+217,Zainal,Arifin,Document Control Manager,zainal0@adventure-works.com,Issaquah,Washington,United States
+218,Tengiz,Kharatishvili,Control Specialist,tengiz0@adventure-works.com,Issaquah,Washington,United States
+219,Sean,Chai,Document Control Assistant,sean1@adventure-works.com,Issaquah,Washington,United States
+220,Karen,Berge,Document Control Assistant,karen0@adventure-works.com,Index,Washington,United States
+221,Chris,Norred,Control Specialist,chris1@adventure-works.com,Issaquah,Washington,United States
+222,A. Scott,Wright,Master Scheduler,ascott0@adventure-works.com,Newport Hills,Washington,United States
+223,Sairaj,Uddin,Scheduling Assistant,sairaj0@adventure-works.com,Redmond,Washington,United States
+224,William,Vong,Scheduling Assistant,william0@adventure-works.com,Bellevue,Washington,United States
+225,Alan,Brewer,Scheduling Assistant,alan0@adventure-works.com,Kenmore,Washington,United States
+226,Brian,LaMee,Scheduling Assistant,brian1@adventure-works.com,Everett,Washington,United States
+227,Gary,Altman,Facilities Manager,gary1@adventure-works.com,Renton,Washington,United States
+228,Christian,Kleinerman,Maintenance Supervisor,christian0@adventure-works.com,Gold Bar,Washington,United States
+229,Lori,Penor,Janitor,lori1@adventure-works.com,Index,Washington,United States
+230,Stuart,Macrae,Janitor,stuart1@adventure-works.com,Renton,Washington,United States
+231,Jo,Berry,Janitor,jo1@adventure-works.com,Index,Washington,United States
+232,Pat,Coleman,Janitor,pat0@adventure-works.com,Gold Bar,Washington,United States
+233,Magnus,Hedlund,Facilities Administrative Assistant,magnus0@adventure-works.com,Renton,Washington,United States
+234,Laura,Norman,Chief Financial Officer,laura1@adventure-works.com,Renton,Washington,United States
+235,Paula,Barreto de Mattos,Human Resources Manager,paula0@adventure-works.com,Bellevue,Washington,United States
+236,Grant,Culbertson,Human Resources Administrative Assistant,grant0@adventure-works.com,Gold Bar,Washington,United States
+237,Hao,Chen,Human Resources Administrative Assistant,hao0@adventure-works.com,Issaquah,Washington,United States
+238,Vidur,Luthra,Recruiter,vidur0@adventure-works.com,Newport Hills,Washington,United States
+239,Mindy,Martin,Benefits Specialist,mindy0@adventure-works.com,Newport Hills,Washington,United States
+240,Willis,Johnson,Recruiter,willis0@adventure-works.com,Everett,Washington,United States
+241,David,Liu,Accounts Manager,david6@adventure-works.com,Gold Bar,Washington,United States
+242,Deborah,Poe,Accounts Receivable Specialist,deborah0@adventure-works.com,Everett,Washington,United States
+243,Candy,Spoon,Accounts Receivable Specialist,candy0@adventure-works.com,Index,Washington,United States
+244,Bryan,Walton,Accounts Receivable Specialist,bryan1@adventure-works.com,Newport Hills,Washington,United States
+245,Barbara,Moreland,Accountant,barbara1@adventure-works.com,Seattle,Washington,United States
+246,Dragan,Tomic,Accounts Payable Specialist,dragan0@adventure-works.com,Gold Bar,Washington,United States
+247,Janet,Sheperdigian,Accounts Payable Specialist,janet0@adventure-works.com,Sammamish,Washington,United States
+248,Mike,Seamans,Accountant,mike0@adventure-works.com,Index,Washington,United States
+249,Wendy,Kahn,Finance Manager,wendy0@adventure-works.com,Sammamish,Washington,United States
+250,Sheela,Word,Purchasing Manager,sheela0@adventure-works.com,Sammamish,Washington,United States
+251,Mikael,Sandberg,Buyer,mikael0@adventure-works.com,Bothell,Washington,United States
+252,Arvind,Rao,Buyer,arvind0@adventure-works.com,Renton,Washington,United States
+253,Linda,Meisner,Buyer,linda2@adventure-works.com,Bellevue,Washington,United States
+254,Fukiko,Ogisu,Buyer,fukiko0@adventure-works.com,Bellevue,Washington,United States
+255,Gordon,Hee,Buyer,gordon0@adventure-works.com,Bellevue,Washington,United States
+256,Frank,Pellow,Buyer,frank2@adventure-works.com,Renton,Washington,United States
+257,Eric,Kurjan,Buyer,eric2@adventure-works.com,Renton,Washington,United States
+258,Erin,Hagens,Buyer,erin0@adventure-works.com,Bellevue,Washington,United States
+259,Ben,Miller,Buyer,ben0@adventure-works.com,Redmond,Washington,United States
+260,Annette,Hill,Purchasing Assistant,annette0@adventure-works.com,Redmond,Washington,United States
+261,Reinout,Hillmann,Purchasing Assistant,reinout0@adventure-works.com,Bellevue,Washington,United States
+262,David,Barber,Assistant to the Chief Financial Officer,david5@adventure-works.com,Newport Hills,Washington,United States
+263,Jean,Trenary,Information Services Manager,jean0@adventure-works.com,Redmond,Washington,United States
+264,Stephanie,Conroy,Network Manager,stephanie0@adventure-works.com,Issaquah,Washington,United States
+265,Ashvini,Sharma,Network Administrator,ashvini0@adventure-works.com,Issaquah,Washington,United States
+266,Peter,Connelly,Network Administrator,peter1@adventure-works.com,Issaquah,Washington,United States
+267,Karen,Berg,Application Specialist,karen1@adventure-works.com,Issaquah,Washington,United States
+268,Ramesh,Meyyappan,Application Specialist,ramesh0@adventure-works.com,Issaquah,Washington,United States
+269,Dan,Bacon,Application Specialist,dan0@adventure-works.com,Issaquah,Washington,United States
+270,François,Ajenstat,Database Administrator,françois0@adventure-works.com,Issaquah,Washington,United States
+271,Dan,Wilson,Database Administrator,dan1@adventure-works.com,Bellevue,Washington,United States
+272,Janaina,Bueno,Application Specialist,janaina0@adventure-works.com,Issaquah,Washington,United States
+273,Brian,Welcker,Vice President of Sales,brian3@adventure-works.com,Issaquah,Washington,United States
+274,Stephen,Jiang,North American Sales Manager,stephen0@adventure-works.com,Redmond,Washington,United States
+275,Michael,Blythe,Sales Representative,michael9@adventure-works.com,Detroit,Michigan,United States
+276,Linda,Mitchell,Sales Representative,linda3@adventure-works.com,Nevada,Utah,United States
+277,Jillian,Carson,Sales Representative,jillian0@adventure-works.com,Duluth,Minnesota,United States
+278,Garrett,Vargas,Sales Representative,garrett1@adventure-works.com,Calgary,Alberta,Canada
+279,Tsvi,Reiter,Sales Representative,tsvi0@adventure-works.com,Memphis,Tennessee,United States
+280,Pamela,Ansman-Wolfe,Sales Representative,pamela0@adventure-works.com,Portland,Oregon,United States

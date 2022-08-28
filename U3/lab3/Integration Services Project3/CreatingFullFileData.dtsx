@@ -1,0 +1,638 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/27/2022 4:52:09 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-QH8GM32C"
+  DTS:CreatorName="LAPTOP-QH8GM32C\Dmitry"
+  DTS:DTSID="{CACCFCAF-637C-4526-961B-C54CE2FF3103}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.694.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{49523C97-2132-46C0-9219-7AA504974735}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{86DD2F0C-8D24-4D57-9349-E46FB81C4230}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:Unicode="True"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Dmitry\AppData\Roaming\SQL Developer\myworks\oraclelabs\U3\lab3\EmployeesExternal.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmployeeID"
+              DTS:DTSID="{2AD299DC-B2F6-4287-99BE-FA04C275F1E3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FirstName"
+              DTS:DTSID="{0E6FC944-602A-4619-A145-521CC4B9D39A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastName"
+              DTS:DTSID="{83E63988-32E5-47E5-A3A4-CC5C9954721A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JobTitle"
+              DTS:DTSID="{BF4AC405-6FB1-491C-A176-40919E8E250E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EmailAddress"
+              DTS:DTSID="{A89FB393-54CF-4ED0-B1DD-73EF121CCBCD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="City"
+              DTS:DTSID="{C6A8FCF6-5442-49A7-BE02-A7D9A518959E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StateProvinceName"
+              DTS:DTSID="{507569ED-4A1A-4B49-8F93-810678CA2509}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CountryRegionName"
+              DTS:DTSID="{00C87B79-D995-4324-A045-35F716BF3704}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-QH8GM32C.AdventureWorks2012]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{439743D0-1A76-4D49-8AB9-1748F6C1FFB0}"
+      DTS:ObjectName="LAPTOP-QH8GM32C.AdventureWorks2012">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-QH8GM32C;Initial Catalog=AdventureWorks2012;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package-{439743D0-1A76-4D49-8AB9-1748F6C1FFB0}LAPTOP-QH8GM32C.AdventureWorks2012;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\EmployeesExternal Full File"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{3a26f867-c579-4d0d-96c1-372869de2480}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EmployeesExternal Full File"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\EmployeesExternal Full File\Employees External SQL Statement"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Employees External SQL Statement"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT 
+    e.[BusinessEntityID] as [EmployeeID]
+    ,p.[FirstName]
+    ,p.[LastName]
+    ,e.[JobTitle]  
+    ,ea.[EmailAddress]
+    ,a.[City]
+    ,sp.[Name] AS [StateProvinceName] 
+    ,cr.[Name] AS [CountryRegionName] 
+FROM [HumanResources].[Employee] e
+  INNER JOIN [Person].[Person] p
+  ON p.[BusinessEntityID] = e.[BusinessEntityID]
+    INNER JOIN [Person].[BusinessEntityAddress] bea 
+    ON bea.[BusinessEntityID] = e.[BusinessEntityID] 
+    INNER JOIN [Person].[Address] a 
+    ON a.[AddressID] = bea.[AddressID]
+    INNER JOIN [Person].[StateProvince] sp 
+    ON sp.[StateProvinceID] = a.[StateProvinceID]
+    INNER JOIN [Person].[CountryRegion] cr 
+    ON cr.[CountryRegionCode] = sp.[CountryRegionCode]
+    LEFT OUTER JOIN [Person].[PersonPhone] pp
+    ON pp.BusinessEntityID = p.[BusinessEntityID]
+    LEFT OUTER JOIN [Person].[PhoneNumberType] pnt
+    ON pp.[PhoneNumberTypeID] = pnt.[PhoneNumberTypeID]
+    LEFT OUTER JOIN [Person].[EmailAddress] ea
+    ON p.[BusinessEntityID] = ea.[BusinessEntityID]
+		order by p.[BusinessEntityID] asc;</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-QH8GM32C.AdventureWorks2012]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-QH8GM32C.AdventureWorks2012]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[EmployeeID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[EmployeeID]"
+                      name="EmployeeID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      name="FirstName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[LastName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[LastName]"
+                      name="LastName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[JobTitle]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[JobTitle]"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[JobTitle]"
+                      name="JobTitle"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[EmailAddress]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[EmailAddress]"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[EmailAddress]"
+                      name="EmailAddress"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[City]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[City]"
+                      length="30"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[StateProvinceName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[StateProvinceName]"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[StateProvinceName]"
+                      name="StateProvinceName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[CountryRegionName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[CountryRegionName]"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[CountryRegionName]"
+                      name="CountryRegionName"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
+                      dataType="i4"
+                      name="EmployeeID" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      dataType="wstr"
+                      length="50"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="50"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[JobTitle]"
+                      dataType="wstr"
+                      length="50"
+                      name="JobTitle" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="30"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[StateProvinceName]"
+                      dataType="wstr"
+                      length="50"
+                      name="StateProvinceName" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].ExternalColumns[CountryRegionName]"
+                      dataType="wstr"
+                      length="50"
+                      name="CountryRegionName" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
+                      dataType="i4"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
+                      name="EmployeeID" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      name="FirstName" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      name="LastName" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[JobTitle]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[JobTitle]"
+                      name="JobTitle" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[EmailAddress]"
+                      name="EmailAddress" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[City]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[City]"
+                      name="City" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[StateProvinceName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[StateProvinceName]"
+                      name="StateProvinceName" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[CountryRegionName]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[CountryRegionName]"
+                      name="CountryRegionName" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File)"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="EmployeesExternal (Full File)"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].Columns[EmployeeID]"
+                      cachedDataType="i4"
+                      cachedName="EmployeeID"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[EmployeeID]"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[EmployeeID]" />
+                    <inputColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].Columns[FirstName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FirstName"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[FirstName]"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[FirstName]" />
+                    <inputColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].Columns[LastName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="LastName"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[LastName]"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[LastName]" />
+                    <inputColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].Columns[JobTitle]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="JobTitle"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[JobTitle]"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[JobTitle]" />
+                    <inputColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].Columns[EmailAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EmailAddress"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[EmailAddress]" />
+                    <inputColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].Columns[City]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="City"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[City]"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[City]" />
+                    <inputColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].Columns[StateProvinceName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="StateProvinceName"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[StateProvinceName]"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[StateProvinceName]" />
+                    <inputColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].Columns[CountryRegionName]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CountryRegionName"
+                      externalMetadataColumnId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[CountryRegionName]"
+                      lineageId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output].Columns[CountryRegionName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[EmployeeID]"
+                      dataType="i4"
+                      name="EmployeeID" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[FirstName]"
+                      dataType="wstr"
+                      length="50"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="50"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[JobTitle]"
+                      dataType="wstr"
+                      length="50"
+                      name="JobTitle" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[EmailAddress]"
+                      dataType="wstr"
+                      length="50"
+                      name="EmailAddress" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="30"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[StateProvinceName]"
+                      dataType="wstr"
+                      length="50"
+                      name="StateProvinceName" />
+                    <externalMetadataColumn
+                      refId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input].ExternalColumns[CountryRegionName]"
+                      dataType="wstr"
+                      length="50"
+                      name="CountryRegionName" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\EmployeesExternal Full File.Paths[OLE DB Source Output]"
+              endId="Package\EmployeesExternal Full File\EmployeesExternal (Full File).Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\EmployeesExternal Full File\Employees External SQL Statement.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="212,42.6666666666667"
+          Id="Package\EmployeesExternal Full File"
+          TopLeft="60,60" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\EmployeesExternal Full File">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="218.666666666667,42.6666666666667"
+          Id="Package\EmployeesExternal Full File\EmployeesExternal (Full File)"
+          TopLeft="233.124996526167,139.578949995648" />
+        <NodeLayout
+          Size="250.666666666667,42.6666666666667"
+          Id="Package\EmployeesExternal Full File\Employees External SQL Statement"
+          TopLeft="79.9999988079071,69.1929828424973" />
+        <EdgeLayout
+          Id="Package\EmployeesExternal Full File.Paths[OLE DB Source Output]"
+          TopLeft="205.33333214124,111.859649509164">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="137.12499771826,27.719300486484"
+              Start="0,0"
+              End="137.12499771826,20.219300486484">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.859650243242" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.859650243242"
+                    Point2="0,13.859650243242"
+                    Point3="4,13.859650243242" />
+                  <mssgle:LineSegment
+                    End="133.12499771826,13.859650243242" />
+                  <mssgle:CubicBezierSegment
+                    Point1="133.12499771826,13.859650243242"
+                    Point2="137.12499771826,13.859650243242"
+                    Point3="137.12499771826,17.859650243242" />
+                  <mssgle:LineSegment
+                    End="137.12499771826,20.219300486484" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,11 @@
+EmployeeID,FirstName,LastName,JobTitle,EmailAddress,City,StateProvinceName,CountryRegionName
+281,Shu,Ito,Sales Representative,shu0@adventure-works.com,San Francisco,California,United States
+282,José,Saraiva,Sales Representative,josé1@adventure-works.com,Ottawa,Ontario,Canada
+283,David,Campbell,Sales Representative,david8@adventure-works.com,Bellevue,Washington,United States
+284,Tete,Mensa-Annan,Sales Representative,tete0@adventure-works.com,Cambridge,Massachusetts,United States
+285,Syed,Abbas,Pacific Sales Manager,syed0@adventure-works.com,Bothell,Washington,United States
+286,Lynn,Tsoflias,Sales Representative,lynn0@adventure-works.com,Melbourne,Victoria,Australia
+287,Amy,Alberts,European Sales Manager,amy0@adventure-works.com,Renton,Washington,United States
+288,Rachel,Valdez,Sales Representative,rachel0@adventure-works.com,Berlin,Hamburg,Germany
+289,Jae,Pak,Sales Representative,jae0@adventure-works.com,Cambridge,England,United Kingdom
+290,Ranjit,Varkey Chudukatil,Sales Representative,ranjit0@adventure-works.com,Bordeaux,Gironde,France
